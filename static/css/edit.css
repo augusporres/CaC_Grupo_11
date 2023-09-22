@@ -18,13 +18,22 @@ header {
     display: flex;
 }
 
+.logo {
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px;
+}
+
 .logo img {
     max-width: 50px;
-    padding: 1em;
-    margin-bottom: 20px;
 }
 
 .logo .titulo {
     max-width: 10em;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
 
+.nav ul li {
+    flex-direction: row;
 }
