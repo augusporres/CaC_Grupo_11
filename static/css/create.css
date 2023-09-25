@@ -12,7 +12,12 @@ font-family: 'Raleway', sans-serif;*/
     margin: 0;
     padding: 0;
 }
-.container{}
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     max-height: 6em;
     background-color: rgb(34, 32, 32);
@@ -174,6 +179,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 3%;
+    margin-top: auto;
 }
 
 footer ul {
