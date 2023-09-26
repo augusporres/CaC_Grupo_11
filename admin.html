@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador-FunkoShop</title>
+</head>
+<body>
+    <header><!--Inicio Header-->
+        <nav>
+            <a href="./index.html">
+
+            </a>
+            <picture>
+                <img src="img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca FunkoShop">
+            </picture>
+            <ul>
+                <li><a href="./pages/vertienda.html">VER TIENDA</a>
+                    </li>
+                <li><a href="./pages/admin.html">ADMIN</a>
+                    </li>
+                <li><a href="./pages/salir.html">SALIR</a>
+                    
+                    </li>
+            </ul>
+        </nav>
+    </header><!--Fin Header-->
+    
+    <main>
+        <section>
+            <form action="tu_pagina_de_busqueda.html" method="get" class="search-form">
+                <button type="submit" class="search-button"><img src="./img/icons/search_icon.svg" alt="Buscar"></button>
+                <input type="text" id="buscar" name="q" placeholder="código, nombre o categoria" required>
+            </form>
+
+        </section>
+        <section>
+            <thead>
+
+            <table><!-- Tabla de productos -->
+                <thead>
+                    <tr>
+                        <th><h1>LISTADO PRODUCTOS</h1></th>
+                        <th><h3>AGREGAR</h3></th>
+
+                     <!-- Botón para agregar nuevos productos -->
+                    <th> <button class="btn" id="btn-agregar"> <img src="./img/icons/" alt="">Agregar Producto</button>
+                    </th>
+
+                    </tr>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Código</th>
+                        <th>Nombre del Producto</th>
+                        <th>Categoría</th>
+                    </tr>
+
+                </thead>
+                <tbody id="lista-productos">
+                    <!-- Los productos se agregarán aquí dinámicamente -->
+                </tbody>
+             </table>
+
+        </section>
+        
+    </main>
+    
+    <footer><!--Inicio Footer-->
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./pages/shop.html">SHOP</a>
+                    </li>
+                    <li><a href="./pages/register.html">REGISTRARSE</a>
+                    </li>
+                    <li><a href="./pages/login.html">LOGIN</a>
+                    </li>
+                    <li><a href="./pages/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+            
+            <picture><img src="./img/branding/isotype.svg" alt="Isotipo de la marca FunkoShop">
+                
+            </picture>
+
+            </nav>
+
+
+        </section>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+
+    </footer><!--Fin Footer-->
+</body>
+</html>
