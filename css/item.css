@@ -202,6 +202,42 @@ nav a {
 }
 
 
+footer section{
+  height: 10em;
+  background-color: rgb(34, 32, 32);
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+}
 
+footer p{
+  background-color: rgb(34, 32, 32);
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  height: 100%; /* Asegura que ocupe toda la altura del elemento footer */
+  color: #fff;
+}
 
+footer ul {
+  list-style-type: none;
+
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+footer a:hover{
+  color: #ff4500;
+}
+
+footer img{
+  width: 6em;
+}
 
