@@ -5,9 +5,97 @@
 }
 
 /* HEADER */
+header {
+    max-height: 6em;
+    background-color: rgb(34, 32, 32);
+    display: flex;
+    justify-content: center;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    min-width: 50%;
+    font-size: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.logo img {
+    max-width: 3em;
+}
+
+.logo .titulo {
+    max-width: 70%;
+    margin-left: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    padding: 10px 0;
+    
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+}
+
+nav a:hover {
+    color: #ff4500;
+}
 
 /* FOOTER */
+footer {
+    background-color: rgb(34, 32, 32);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    margin-top: auto;
+    font-size: 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    min-width: 50%;
+}
+.footer-container ul {
+    list-style-type: none;
+}
 
+.footer-container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6em;
+}
+footer p{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    color: white;
+    font-size: 10px;
+}
+.footer-container a:hover {
+    color: #ff4500;
+}
+
+.footer-container img {
+    max-width: 4em;
+}
 
 /* --- CREATE --- */
 #create .container {
@@ -68,56 +156,7 @@
     display: flex;
     flex-direction: column;
 }
-#login header {
-    max-height: 6em;
-    background-color: rgb(34, 32, 32);
-    display: flex;
-    justify-content: center;
-}
-#login .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    min-width: 50%;
-    font-size: 20px;
-}
 
-#login .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 0;
-}
-
-#login .logo img {
-    max-width: 3em;
-}
-
-#login .logo .titulo {
-    max-width: 70%;
-    margin-left: 5px;
-}
-
-#login nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 3em;
-    padding: 10px 0;
-    
-}
-
-#login nav a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.8em;
-}
-
-#login nav a:hover {
-    color: #ff4500;
-}
 
 #login .main-content {
     font-size: 1rem; /* =16px */
@@ -190,45 +229,7 @@
     width: 100px;
 }
 
-#login footer {
-    background-color: rgb(34, 32, 32);
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3%;
-    margin-top: auto;
-    font-size: 20px;
-}
-#login .footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1400px;
-    min-width: 50%;
-}
-#login .footer-container ul {
-    list-style-type: none;
-}
 
-#login .footer-container a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.6em;
-}
-#login footer p{
-    margin-top: 13px;
-    margin-bottom: 13px;
-    color: white;
-    font-size: 10px;
-}
-#login .footer-container a:hover {
-    color: #ff4500;
-}
-
-#login .footer-container img {
-    max-width: 4em;
-}
 /* --- ITEM --- */
 /* --- EDIT --- */
 /* --- CREATE --- */
