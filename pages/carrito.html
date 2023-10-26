@@ -3,7 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>FUNKOSHOP</title>
-        <link rel="stylesheet" href="../css/styles.css"/>
+        <link rel="stylesheet" href="../css/carrito.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -31,80 +37,88 @@
                 </ul>
             </nav>
         </header>
-
-        <div class="B">
-            <div class="A a1"></div>
-            <div class="A a2"></div>
-            <div class="A a3"></div>
-        </div>
         <main>
-            <h2>CARRITOS DE COMPRAS</h2>
-            <header>
-                <ul>
-                    <li>
-                        DETALLE DE PRODUCTO
-                    </li>
-                    <li>
-                        CANTIDAD
-                    </li>
-                    <li>
-                        TOTAL
-                    </li>
+            <h2 class="titulo">
+                <span class="subrayado">CARRITO DE COMPRAS</span>
+            </h2>
+            <header class="cajachica">
+                <ul class="listainterna">
+                    <li class="elementolistainterna">DETALLE DE PRODUCTO</li>
+                    <li class="elementolistainterna">CANTIDAD</li>
+                    <li class="elementolistainterna">TOTAL</li>
                 </ul>
             </header>
             <ul>
-                <li>
-                    <div>
+                <li class="cajagrande">
+                    <div class="elementolistainternaproducto">
                         <picture>
-                            <img src="../img/star-wars/baby-yoda-1.webp" alt="Figura de Baby Yoda" height="100px">
+                            <img src="../img/star-wars/baby-yoda-1.webp" alt="Figura de Baby Yoda" height="118px" width="118px">
                         </picture>
-                        <h5>Baby Yoda Blueball</h5>
-                        <p>Star Wars</p>
-                        <p>Precio unitario: $ 1.799,99</p>
+                        <div class="descripcionproducto">
+                            <h5 class="titulodescripcion">Baby Yoda Blueball</h5>
+                            <p class="nombredescripcion">Star Wars</p>
+                            <p class="preciodescripcion">Precio unitario: $ 1.799,99</p>
+                        </div>    
                     </div>
-                    <input type="number" value="2">
-                    <p>$ 3.599,98</p>
-                    <button><img src="../img/icons/remove.svg" alt="remove"/></button>
+                    <span class="elementolistainternaproducto">
+                        <input type="number" value="2">
+                    </span>
+                    <p class="elementolistainternaproducto preciototal">$ 3.599,98</p>
+                   <span class="elementolistainternaproducto">
+                        <button class="botonremover">
+                            <img src="../img/icons/remove.svg" alt="remove"/>
+                        </button>
+                    </span>
                 </li>
-                <li>
-                    <div>
+                <li class="cajagrande">
+                    <div class="elementolistainternaproducto">
                         <picture>
-                            <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura de Pidgeotto" height="100px">
+                            <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura de Pidgeotto" height="118px" width="118px">
                         </picture>
-                        <h5>Pidgeotto</h5>
-                        <p>Pokemon</p>
-                        <p>Precio unitario: $ 1.799,99</p>
+                        <div class="descripcionproducto">
+                            <h5 class="titulodescripcion">Pidgeotto</h5>
+                            <p class="nombredescripcion">Pokemon</p>
+                            <p class="preciodescripcion">Precio unitario: $ 1.799,99</p>
+                        </div>    
                     </div>
-                    <input type="number" value="1">
-                    <p>$ 1.799,99</p>
-                    <button><img src="../img/icons/remove.svg" alt="remove"/></button>
+                    <span class="elementolistainternaproducto">
+                        <input type="number" value="1">
+                    </span>
+                    <p class="elementolistainternaproducto preciototal">$ 1.799,99</p>
+                    <span class="elementolistainternaproducto">
+                        <button class="botonremover">
+                            <img src="../img/icons/remove.svg" alt="remove"/>
+                        </button>
+                    </span>
                 </li>
             </ul>
         </main>
-        <section>
-            <h3>RESUMEN</h3>
-            <div>
-                <span>
-                    <h6>cantidad de elementos</h6>
-                    <p>3</p>
-                </span>
-                <span>
-                    <h6>subtotal</h6>
-                    <p>$ 5.399,97</p>
-                </span>
-                <span>
-                    <h6>envio</h6>
-                    <p>$ 0,00</p>
-                </span>
-                <hr>
-                <span>
-                    <h6>total</h6>
-                    <p>$5.399,97</p>
-                </span>
+        <section class="seccionresumen">
+            <div class="resumencontenedor"> 
+                <h3 class="titulo"><span class="subrayado">RESUMEN</span></h3>
+                <div class="cajachica cajachicavertical">
+                    <span class="categoriaresumen">
+                        <h6 class="titulodecategoria">cantidad de elementos</h6>
+                        <p class="valordecategoria">3</p>
+                    </span>
+                    <span class="categoriaresumen">
+                        <h6 class="titulodecategoria">subtotal</h6>
+                        <p class="valordecategoria">$ 5.399,97</p>
+                    </span>
+                    <span class="categoriaresumen">
+                        <h6 class="titulodecategoria">envio</h6>
+                        <p class="valordecategoria">$ 0,00</p>
+                    </span>
+                    <hr>
+                    <span>
+                        <h6>total</h6>
+                        <p>$5.399,97</p>
+                    </span>
+                </div>
+                <button>ir a pagar</button>
             </div>
-            <button>ir a pagar</button>
         </section>
-        
+
         <footer>
             <section>
                 <nav>
