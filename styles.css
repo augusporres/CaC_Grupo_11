@@ -3,37 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
-html{
-    font-family: var(--base-font);
-    font-size: 62.5%;
-    color:var(--dark-solid);
-
-}
-
-a{
-    text-decoration : none;
-    font-family: inherit;
-    color: inherit;
-}
-
-ul,ol {
-    list-style-type: none;
-}
-
-p{
-    font-size: 1.8em;
-}
-
-img{
-    width: 100%;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 :root{
     /*PALLETE*/
     --primary-solid:#FF3333;
@@ -45,6 +14,8 @@ img{
     --secondary-900:rgb(29, 132, 181,0.9);
     --secondary-500:rgb(29, 132, 181,0.5);
     --secondary-300:rgb(29, 132, 181,0.3);
+    --grey-text: #B9B9B9;
+
     /*--secondary-solid*/
     --dark-solid: #1F1F1F;
     --dark-900: rgb(31, 31, 31,0.9);
@@ -80,6 +51,36 @@ img{
    --spacing-12: 1.2rem;
    --spacing-8: 0.8rem;
 
+}
+
+html{
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color:var(--dark-solid);
+
+}
+
+a{
+    text-decoration : none;
+    font-family: inherit;
+    color: inherit;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+p{
+    font-size: 1.8em;
+}
+
+img{
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header,
@@ -165,58 +166,115 @@ header{
 
 
 /* --- CREATE --- */
-#create .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-#create header {
-    max-height: 6em;
-    background-color: rgb(34, 32, 32);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#create .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#create .main-content {
+    font-size: 16px; /* =16px */
+    max-width: 90%;
+    height: 54vh;
+    margin: 0 auto;
     padding: 20px;
+    font-family: 'Inter', sans-serif;
 }
-
-#create .logo img {
-    max-width: 40px;
+#create .add-item {
+    width: 75%;
+    margin-bottom: 20px;
 }
-
-#create .logo .titulo {
-    max-width: 9em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-}
-
-#create nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 3em;
-    padding: 10px;
-    margin-right: 30px;
-}
-
-#create nav a {
-    color: #fff;
-    text-decoration: none;
+#create .add-item h2 {
+    text-transform: uppercase;
+    font-size: 1.3em;
     font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    letter-spacing: 1px;
 }
 
-#create nav a:hover {
-    color: #ff4500;
+#create .choice {
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#create .choice label{
+    margin-right: 0.5em;
+}
+#create select {
+    height: 1.8em;
+    border-radius: 5px;
+    width: 12em;
+    border: 2px solid;
+    color: var(--grey-text)
 }
 
+#create .choice div {
+    margin-right: 5%;
+}
+
+#create .nombre-prod {
+    padding-bottom: 3%;
+}
+#create .nombre-prod input{
+    min-width: 23%;
+}
+#create .red-underline{
+    border-style: none;
+    border-bottom: 3px solid #FF3333;
+    text-align: center;
+}
+
+#create .descripcion_prod {
+    display: flex;
+    max-width: 97%;
+    gap: 0.6em;
+    width: 60%;
+}
+#create .descripcion_prod div {
+    display: flex;
+    gap: .6em;
+    margin-bottom: 2em;
+}
+#create .sku input{
+    width: 60%;
+    margin-right: 1.5em;
+}
+#create .precio input{
+    width: 50%;
+}
+#create .stock input{
+    width: 25%;
+}
+
+#create .pago {
+    margin-bottom: 2em;
+    display: flex;
+}
+#create .descuento {
+    width: 18%;
+}
+#create .cuotas {
+    width: 70%;
+}
+#create .descuento input {
+    width: 27%;
+}
+#create .cuotas select {
+    width: 35%;
+}
+
+#create .add-button button{
+    height: 2.5em;
+    width: 10em;
+    margin-right: 1.5em;
+    font-size: 0.8em;
+    background-color: #FF3333;
+    color: white;
+    border-style: none;
+}
+
+#create .imgs {
+    display: flex;
+    padding: 3%;
+    gap: 3%;
+}
+
+#create .imgs img {
+    width: 100px;
+}
 
 
 /* --- LOGIN --- */
