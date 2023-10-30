@@ -200,7 +200,9 @@ header{
     border: 2px solid;
     color: var(--grey-text)
 }
-
+#create label {
+    font-weight: bold;
+}
 #create .choice div {
     margin-right: 5%;
 }
@@ -278,18 +280,17 @@ header{
 
 
 /* --- LOGIN --- */
-
-#login .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+#login .navbar__link{
+    font-family: var(--alternative-font);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-
 #login .main-content {
-    font-size: 1rem; /* =16px */
+    font-size: 16px; /* =16px */
     max-width: 90%;
-    height: 20em;
+    height: 52vh;
     margin: 0 auto;
     padding: 20px;
     font-family: 'Inter', sans-serif;
@@ -320,9 +321,17 @@ header{
     padding-top: 3%;
     padding-bottom: 3%;
 }
+#login .credentials div {
+    margin-bottom: 15px;
+}
 #login .credentials .label{
-    width: 6em;
+    width: 10em;
     display: inline-block;
+}
+#login .credentials label{
+    color: var(--dark-solid);
+    font-size: var(--font-xsmall);
+    font-weight: bold;
 }
 #login .red-underline{
     border-style: none;
@@ -332,7 +341,7 @@ header{
 
 #login .ingresar button{
     height: 2.5em;
-    width: 10em;
+    width: 8em;
     margin-right: 1.5em;
     margin-bottom: 1em;
     font-size: 0.8em;
@@ -345,6 +354,7 @@ header{
 }
 #login .forgot-pass p{
     color: #1D84B5;
+    font-size: 1em;
 }
 
 #login .imgs {
