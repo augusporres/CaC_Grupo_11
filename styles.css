@@ -492,6 +492,34 @@ header{
   right: 0;
 }
 
+#item .item-bottom-rest{
+  background-color: #515355; 
+  color: #fff; 
+  font-size: 17px; 
+  margin-right: 2px;
+  border: none; 
+  padding: 5px 10px; 
+  cursor: pointer; 
+}
+
+#item .item-bottom-add{
+  background-color: #515355; 
+  color: #fff; 
+  font-size: 17px; 
+  margin-right: 14px;
+  border: none; 
+  padding: 5px 10px; 
+  cursor: pointer; 
+}
+
+#item .item-imput {
+  font-size: 16px; 
+  border: 1px solid #977d7d; 
+  padding: 7px; 
+  width: 5px; 
+  margin-left: 10px;
+  margin-top: 2px;
+}
 
 /* --- EDIT --- */
 /* --- CREATE --- */
