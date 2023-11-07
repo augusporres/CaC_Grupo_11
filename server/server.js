@@ -9,6 +9,8 @@ app.use('/', express.static(path.join(__dirname, '/public')))
 
 app.use('/', require('./routes/root'))
 app.use('/shop', require('./routes/shopRoutes'))
+app.use('/auth', require('./routes/authRoutes'))
+app.use('/admin', require('./routes/adminRoutes'))
 
 app.all('*', (req, res) => {
     res.status(404)
