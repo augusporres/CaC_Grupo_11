@@ -134,8 +134,43 @@ h3 {
     align-items: center;
 }
 
-.eliminarflecha::-webkit-inner-spin-button {  
+.controldecantidad {
+    display: flex;
+    justify-content: center;
+}
+
+.inputcantidad {
+    border:1px solid rgba(201, 201, 201, 1);
+    width: 89.48px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-right: 8px;
+}
+
+.inputcantidad::-webkit-inner-spin-button {  
     display: none;
+}
+
+.botonmasymenos {
+    background-color: rgba(242, 78, 30, 1);
+    border: none;
+    min-height: 16px;
+    min-width: 18px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direccionmasymenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .elementolistainternaproducto:last-child {
