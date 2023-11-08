@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="../css/carrito.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
     </head>
     <body>
         <header>
@@ -57,15 +57,17 @@
                         <div class="descripcionproducto">
                             <h5 class="titulodescripcion">Baby Yoda Blueball</h5>
                             <p class="nombredescripcion">Star Wars</p>
-                            <p class="preciodescripcion">Precio unitario: $ 1.799,99</p>
+                            <p class="preciodescripcion">Precio unitario: $ 1799,99</p>
                         </div>    
                     </div>
                     <span class="elementolistainternaproducto">
-                        <input type="number" value="2">
+                        <input type="number" value="2" class="eliminarflecha">
+                        <button>+</button>
+                        <button>-</button>
                     </span>
-                    <p class="elementolistainternaproducto preciototal">$ 3.599,98</p>
+                    <p class="elementolistainternaproducto preciototal">$ 3599,98</p>
                    <span class="elementolistainternaproducto">
-                        <button class="botonremover">
+                        <button class="botonremover" onclick="">
                             <img src="../img/icons/remove.svg" alt="remove"/>
                         </button>
                     </span>
@@ -78,13 +80,13 @@
                         <div class="descripcionproducto">
                             <h5 class="titulodescripcion">Pidgeotto</h5>
                             <p class="nombredescripcion">Pokemon</p>
-                            <p class="preciodescripcion">Precio unitario: $ 1.799,99</p>
+                            <p class="preciodescripcion">Precio unitario: $ 1799,99</p>
                         </div>    
                     </div>
                     <span class="elementolistainternaproducto">
                         <input type="number" value="1">
                     </span>
-                    <p class="elementolistainternaproducto preciototal">$ 1.799,99</p>
+                    <p class="elementolistainternaproducto preciototal">$ 1799,99</p>
                     <span class="elementolistainternaproducto">
                         <button class="botonremover">
                             <img src="../img/icons/remove.svg" alt="remove"/>
@@ -109,14 +111,13 @@
                         <h6 class="titulodecategoria">envio</h6>
                         <p class="valordecategoria">$ 0,00</p>
                     </span>
-                    <hr>
-                    <span>
-                        <h6>total</h6>
-                        <p>$5.399,97</p>
+                    <span class="categoriaresumen">
+                        <h6 class="titulototal">total</h6>
+                        <p class="valordeltotal">$5.399,97</p>
                     </span>
                 </div>
-                <button>ir a pagar</button>
-            </div>
+                    <a href="./pagar.html" class="botonpagar">ir a pagar </a>
+                </div>
         </section>
 
         <footer>
