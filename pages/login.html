@@ -15,68 +15,79 @@
 </head>
 
 <body id="login">
-    <div class="container">
-        <header>
-            <div class="header-container">
-                <div class="logo">
-                    <img src="../img/branding/isotype.svg" alt="">
-                    <img class="titulo" src="../img/branding/Vector.png" alt="">
-                </div>
-                
-                
-                <nav>
-                    <ul>
-                        <li><a href="#">VER TIENDA</a></li>
-                        <li><a href="#">ADMIN</a></li>
-                        <li><a href="#">SALIR</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        
-        <section class="main-content">
-            <div class="login">
-                <h2>Ingresar a mi cuenta</h2>
-                <form>
-                    <div class="credentials">
-                        <div class="email-field">
-                            <div class="label">
-                                <label for="email">Email:</label>
-                            </div>
-                            <input id="email" type="email" value="" placeholder="johndoe@correo.com" class="red-underline">
+    <!-- INICIO HEADER -->
+    <header>
+        <nav class="navbar container"> 
+            <picture class="navbar__logo">
+                <a href="../index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contacto.html">Ver Tienda</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">Admin</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/carrito.html">Salir</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN DE HEADER -->
+    
+    <section class="main-content">
+        <div class="login">
+            <h2>Ingresar a mi cuenta</h2>
+            <form>
+                <div class="credentials">
+                    <div class="email-field">
+                        <div class="label">
+                            <label for="email">Email:</label>
                         </div>
-                        <div class="password-field">
-                            <div class="label">
-                                <label for="password">Contraseña:</label>
-                            </div>
-                            <input id="password" type="password" value="" class="red-underline">
-                        </div>      
+                        <input id="email" type="email" value="" placeholder="johndoe@correo.com" class="red-underline">
                     </div>
-                    
-                    <div class="ingresar">
-                        <button type="submit">Ingresar</button>
-                        <input type="checkbox"> Recordarme
-                    </div>
-                    <a class="forgot-pass" href="#"><p>Olvidé mi contraseña</p></a>
-                </form>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="footer-container">
-                <ul>
-                    <li><a href="shop.html">SHOP</a></li>
-                    <li><a href="#">REGISTRARSE</a></li>
-                    <li><a href="login.html">INGRESAR</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-                <div>
-                    <img src="../img/branding/isotype.svg" alt="">
+                    <div class="password-field">
+                        <div class="label">
+                            <label for="password">Contraseña:</label>
+                        </div>
+                        <input id="password" type="password" value="" class="red-underline">
+                    </div>      
                 </div>
-            </div>
-            <p class="footer-text">All rights reserved 2023 - Funkshop &copy;</p>
-        </footer>
-    </div>
+                
+                <div class="ingresar">
+                    <button type="submit">Ingresar</button>
+                    <input type="checkbox"> Recordarme
+                </div>
+                <a class="forgot-pass" href="#"><p>Olvidé mi contraseña</p></a>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <nav>
+                <picture>
+                    <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+                </picture>  
+            </nav>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
