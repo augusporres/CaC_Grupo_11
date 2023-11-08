@@ -4,8 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Funko Shop</title>
+
+    <link rel="stylesheet" href="link rel=" preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Klee+One:wght@600&family=Raleway&family=Roboto:wght@100;300&family=Zilla+Slab:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="../img/branding/isotype.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Inter:wght@700&family=Klee+One:wght@600&family=Raleway&family=Roboto:wght@100;300&family=Zilla+Slab:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Inter:wght@400;700&family=Klee+One:wght@600&family=Raleway&family=Roboto:wght@100;300&family=Zilla+Slab:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
 </head>
+
+<!-------------------------------NAV--------------------------->
 
 <body>
     <header>
@@ -16,9 +41,9 @@
                 </a>
             </picture>
             <ul>
-                <li><a href="#"></a>Shop</li>
-                <li><a href="./contacto.html"></a>Contacto</li>
-                <li><a href="./login.html"></a>Login</li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
                 <li><a href="./carrito.html">
                         <img src="../img/icons/cart-icon.svg" alt="icono del carrito">
                     </a>
@@ -27,176 +52,217 @@
         </nav>
     </header>
 
-    <article>
-        <aside>
-        <h5>BUSCAR</h5>
-        <button></button>
-        <h5>ORDENAR POR</h5>
-        <button></button>
-        <h5>PRECIO</h5>
-        <button>MIN</button> <button>MAX</button>
-        <h5>FILTRAR</h5>
-        </aside>
-    </article>
+
+    <!---------------------FUNKOS--------------------------->
 
     <main>
-        <section>
-            <div>
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
 
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
+        <article class="menuIzq">
+            <aside>
+                <h3>BUSCAR</h3>
+                <br>
+                <textarea id="mensaje" name="mensaje" rows="2" cols="15" placeholder="Item o categoría"></textarea>
+                <br>
+                <br>
+                <h3>ORDENAR POR</h3>
+                <br>
+                <textarea id="mensaje" name="mensaje" rows="2" cols="15" placeholder="Mayor a menor"></textarea>
+                <br>
+                <br>
+                <h3>PRECIO</h3>
+                <br>
+                <label for="mensaje">MIN </label><textarea id="mensaje" name="mensaje" rows="1" cols="1"
+                    placeholder="0"></textarea> <label for="mensaje">MAX </label><textarea id="mensaje" name="mensaje"
+                    rows="1" cols="1" placeholder="0"></textarea>
+                <br>
+                <br>
+                <h3>FILTRAR</h3>
+                <br>
+                <h6><input type="checkbox"> NUEVOS</h6>
+                <h6><input type="checkbox"> OFERTAS</h6>
+                <h6><input type="checkbox"> EDICION ESPECIAL</h6>
+                <h6><input type="checkbox"> FAVORITOS</h6>
+            </aside>
+        </article>
 
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/harry-potter/luna-1.webp" alt="img luna harry potter">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
 
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
+        <section class="contenedor-flex">
+            <article class="articuloUno">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
+                    </picture>
+                    <div class="funkoPrecio">
+                        <p>STAR WARS</p>
+                        <h4>STORMTROOPER LIGHTSABER</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
 
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
+            <article class="articuloDos">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
+                    </picture>
+                    <div class="funkoPrecio1">
+                        <p>POKEMON</p>
+                        <h4>PIDGEOTTO</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
 
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/harry-potter/luna-1.webp" alt="img luna harry potter">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-
-                <article>
-                    <a href="">
-                        <picture>
-                            <img src="../img/harry-potter/luna-1.webp" alt="img luna harry potter">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-            </div>
+            <article class="articuloTres">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/harry-potter/luna-1.webp" alt="img luna harry potter">
+                    </picture>
+                    <div class="funkoPrecio2">
+                        <p>HARRY POTTER</p>
+                        <h4>LUNA LOVEGOOD LION MASK</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
         </section>
 
+        <section class="contenedor-flex">
+            <article class="articuloUno">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
+                    </picture>
+                    <div class="funkoPrecio">
+                        <p>STAR WARS</p>
+                        <h4>STORMTROOPER LIGHTSABER</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
 
+            <article class="articuloDos">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
+                    </picture>
+                    <div class="funkoPrecio1">
+                        <p>POKEMON</p>
+                        <h4>PIDGEOTTO</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
 
+            <article class="articuloTres">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/harry-potter/luna-1.webp" alt="img luna harry potter">
+                    </picture>
+                    <div class="funkoPrecio2">
+                        <p>HARRY POTTER</p>
+                        <h4>LUNA LOVEGOOD LION MASK</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
+        </section>
 
+        <section class="contenedor-flex">
+            <article class="articuloUno">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
+                    </picture>
+                    <div class="funkoPrecio">
+                        <p>STAR WARS</p>
+                        <h4>STORMTROOPER LIGHTSABER</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articuloDos">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
+                    </picture>
+                    <div class="funkoPrecio1">
+                        <p>POKEMON</p>
+                        <h4>PIDGEOTTO</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articuloTres">
+                <h5>NUEVO</h5>
+                <a href="">
+                    <picture>
+                        <img src="../img/harry-potter/luna-1.webp" alt="img luna harry potter">
+                    </picture>
+                    <div class="funkoPrecio2">
+                        <p>HARRY POTTER</p>
+                        <h4>LUNA LOVEGOOD LION MASK</h4>
+                        <p>$ 1799,99</p>
+                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                    </div>
+                </a>
+            </article>
+        </section>
 
     </main>
+
+    <!-----------------FOOTER--------------------->
+
+
     <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="./login.html">INGRESAR</a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
+        <section class="containerFooter">
+
+            <article class="navFooter">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./pages/shop.html">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="./pages/login.html">INGRESAR</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+
+            <article class="logoFooter">
                 <picture>
                     <a href="">
-                        <img src="../img/branding/isotype.svg"img logo de la empresa">
+                        <img src="../img/branding/isotype.svg" alt="img logo de la empresa">
                     </a>
                 </picture>
-            </nav>
+            </article>
         </section>
-        <p>All rights reserved 2023 - Funkoshop & copy;</p>
+
+        <section class="pFooter">
+            <p>All rights reserved 2023 - Funkoshop & copy;</p>
+        </section>
     </footer>
 </body>
 
