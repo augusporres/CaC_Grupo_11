@@ -4,11 +4,7 @@ ul {
     list-style: none;
 }
 
-main {
-    max-width: 1200px;
-}
-
-section {
+.formatodepagina {
     max-width: 1200px;
 }
 
@@ -22,6 +18,7 @@ h3 {
     font-weight: 700;
     line-height: 54px;
     letter-spacing: 0em;
+    margin: 38px, 0px;
 }
 
 .titulodescripcion {
