@@ -572,7 +572,7 @@ header{
 }
 
 
-img {
+#home img {
     max-width: 100%;
     height: auto;
 }
@@ -580,17 +580,17 @@ img {
 
 /**************************** BANNER ******************************/
 
-.banner-container {
+#home .banner-container {
     position: relative;
     height: 50px;
     margin-bottom: 60%;
 }
 
-.banner {
+#home .banner {
     width: 80rem;
 }
 
-.text-content {
+#home .text-content {
     position: absolute;
     top: 300%;
     left: 5%;
@@ -600,19 +600,19 @@ img {
     text-align: left;
 }
 
-button {
+#home button {
     background-color: white;
     border-radius: 12px;
     padding: 10px;
     border: 1px solid white;
 }
 
-button a {
+#home button a {
     color: black;
     padding: 38px;
 }
 
-.overlay {
+#home .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -624,7 +624,7 @@ button a {
 
 /************************* FUNKOS *****************************/
 
-.container {
+#home .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -633,7 +633,7 @@ button a {
     margin: 0 auto;
 }
 
-.group {
+#home .group {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -642,50 +642,50 @@ button a {
     text-align: left;
 }
 
-.group.reverse {
+#home .group.reverse {
     flex-direction: row-reverse;
 }
 
-.item {
+#home .item {
     width: 38%;
 }
 
-.container article {
+#home .container article {
     padding: 20px;
     margin: 10px;
 }
 
-.container img {
+#home .container img {
     max-width: 100%;
     height: auto;
 }
 
 
-hr {
+#home hr {
     border: 1px solid red;
 }
 
-.buttonUno {
+#home .buttonUno {
     background-color: rgb(61, 61, 68);
 }
 
-.buttonUno a {
+#home .buttonUno a {
     color: white;
 }
 
-.buttonDos {
+#home .buttonDos {
     background-color: rgb(61, 61, 68);
 }
 
-.buttonTres {
+#home .buttonTres {
     background-color: rgb(61, 61, 68);
 }
 
-.buttonDos a {
+#home .buttonDos a {
     color: white;
 }
 
-.buttonTres a {
+#home .buttonTres a {
     color: white;
 }
 
@@ -693,12 +693,12 @@ hr {
 
 /*************************ULTIMOS LANZAMIENTOS******************/
 
-h2 {
+#home h2 {
     margin: 35px;
     ;
 }
 
-.contenedor-flex {
+#home .contenedor-flex {
     display: flex;
     flex-direction: row;
     margin: 5%;
@@ -707,7 +707,7 @@ h2 {
     margin-bottom: 50px;
 }
 
-h5 {
+#home h5 {
     font-size: x-small;
     color: white;
     padding: 9px;
@@ -715,45 +715,45 @@ h5 {
     background-color: red;
 }
 
-.funkoPrecio {
+#home .funkoPrecio {
     color: black;
 }
 
-.funkoPrecio p {
+#home .funkoPrecio p {
     font-family: 'Inter', sans-serif;
 }
 
-.funkoPrecio h4 {
+#home .funkoPrecio h4 {
     font-family: 'Inter', sans-serif;
 }
 
-.funkoPrecio1 {
+#home .funkoPrecio1 {
     color: black;
 }
 
-.funkoPrecio1 h4 {
+#home .funkoPrecio1 h4 {
     font-family: 'Inter', sans-serif;
 }
 
-.funkoPrecio1 p {
+#home .funkoPrecio1 p {
     font-family: 'Inter', sans-serif;
 }
 
-.funkoPrecio2 {
+#home .funkoPrecio2 {
     color: #111111;
 }
 
-.funkoPrecio2 h4 {
+#home .funkoPrecio2 h4 {
     font-family: 'Inter', sans-serif;
 }
 
-.funkoPrecio2 p {
+#home .funkoPrecio2 p {
     font-family: 'Inter', sans-serif;
 }
 
 /***********************FOOTER**************************/
 
-.containerFooter {
+#home .containerFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -762,12 +762,12 @@ h5 {
     padding: 5%;
 }
 
-.navFooter li {
+#home .navFooter li {
     list-style: none;
     padding: 6%;
 }
 
-.pFooter {
+#home .pFooter {
     text-align: center;
     background-color: rgb(61, 61, 68);
     padding: 0.7%;
@@ -778,7 +778,7 @@ h5 {
 
 /***********************SHOP**************************/
 
-.menuIzq {
+#home .menuIzq {
     display: flex;
     width: 100px;
     height: 40px;
@@ -786,10 +786,10 @@ h5 {
     padding: 20px;
 }
 
-h3 {
+#home h3 {
     font-size: small;
 }
 
-.contenedor-flex {
+#home .contenedor-flex {
     margin-top: 1px;
 }
