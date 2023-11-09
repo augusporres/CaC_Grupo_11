@@ -564,6 +564,200 @@ header{
 
 /* --- EDIT --- */
 /* --- CREATE --- */
+
+/* HOME */
+
+
+#home body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#home img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/**************************** BANNER ******************************/
+
+#home .banner-container {
+    position: relative;
+    height: 50px;
+    margin-bottom: 60%;
+}
+
+#home .banner {
+    width: 80rem;
+}
+
+#home .text-content {
+    position: absolute;
+    top: 300%;
+    left: 5%;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    text-align: left;
+}
+
+#home button {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#home button a {
+    color: black;
+    padding: 38px;
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1560%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/************************* FUNKOS *****************************/
+
+#home .containerCero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#home .group {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    text-align: left;
+}
+
+#home .group.reverse {
+    flex-direction: row-reverse;
+}
+
+#home .item {
+    width: 38%;
+}
+
+#home .container article {
+    padding: 20px;
+    margin: 10px;
+}
+
+#home .container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#home hr {
+    border: 1px solid red;
+}
+
+#home .buttonUno {
+    background-color: rgb(61, 61, 68);
+}
+
+#home .buttonUno a {
+    color: white;
+}
+
+#home .buttonDos {
+    background-color: rgb(61, 61, 68);
+}
+
+#home .buttonTres {
+    background-color: rgb(61, 61, 68);
+}
+
+#home .buttonDos a {
+    color: white;
+}
+
+#home .buttonTres a {
+    color: white;
+}
+
+
+
+/*************************ULTIMOS LANZAMIENTOS******************/
+
+#home h2 {
+    margin: 35px;
+    ;
+}
+
+#home .contenedor-flex {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#home h5 {
+    font-size: x-small;
+    color: white;
+    padding: 9px;
+    float: inline-end;
+    background-color: red;
+}
+
+#home .funkoPrecio {
+    color: black;
+}
+
+#home .funkoPrecio p {
+    font-family: 'Inter', sans-serif;
+}
+
+#home .funkoPrecio h4 {
+    font-family: 'Inter', sans-serif;
+}
+
+#home .funkoPrecio1 {
+    color: black;
+}
+
+#home .funkoPrecio1 h4 {
+    font-family: 'Inter', sans-serif;
+}
+
+#home .funkoPrecio1 p {
+    font-family: 'Inter', sans-serif;
+}
+
+#home .funkoPrecio2 {
+    color: #111111;
+}
+
+#home .funkoPrecio2 h4 {
+    font-family: 'Inter', sans-serif;
+}
+
+#home .funkoPrecio2 p {
+    font-family: 'Inter', sans-serif;
+}
+
+/***********************FOOTER**************************/
+
+
+
+/***********************SHOP**************************/
+
 /* INICIO DE CARRITO*/
 #carrito ul {
     margin: 0;
