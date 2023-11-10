@@ -966,6 +966,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+#carrito .botonmasymenos:focus {
+    background-color: rgba(255, 91, 43, 1);
 }
 
 #carrito .direccionmasymenos {
@@ -1008,6 +1013,7 @@ header{
 #carrito .botonremover {
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 #carrito .seccionresumen {
