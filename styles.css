@@ -817,7 +817,11 @@ header{
     font-weight: 700;
     line-height: 54px;
     letter-spacing: 0em;
-    margin: 38px 0px;
+    margin:128px 0px 60px 0px
+}
+
+#carrito .subtitulo {
+    margin: 36px 0px 18px 0px;
 }
 
 #carrito .titulodescripcion {
@@ -895,14 +899,16 @@ header{
 }
 
 #carrito .subrayado {
-    border-bottom: 5px solid rgba(255, 51, 51, 1)
+    border-bottom: 5px solid rgba(255, 51, 51, 1);
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
 #carrito .listainterna{
     width: 100%;
     font-size: 16px;
     font-weight: 700;
-    padding: 1rem 46px 1rem 0;
+    padding: 1.6rem 62px 1.6rem 16px;
     display: flex;    
 }
 
@@ -983,7 +989,7 @@ header{
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
     color: rgb(0, 0, 0);
     padding: 0px;
 }
@@ -994,8 +1000,9 @@ header{
     border-radius: 25px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
     min-height: 195px;
+    padding: 16px;
 }
 
 #carrito .botonremover {
@@ -1024,8 +1031,9 @@ header{
 #carrito .cajachicavertical {
     display: flex;
     flex-direction: column;
-    min-width: 524px;
+    min-width: 572px;
     padding: 24px;
+    margin-bottom: 4.4rem;
 }
 
 #carrito .categoriaresumen:last-child {
