@@ -1,3 +1,0 @@
-function mostrarProximamente () {
-    alert("Proximamente")
-}
