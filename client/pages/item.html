@@ -67,7 +67,9 @@
               <p class="collection-price">$ 1799,99</p>
             </article>
             <div class="counter-and-cart">
-              <input type="number" id="cantidad" value="1" min="1">
+              <button id="sub" class="item-bottom-rest" type="button">-</button>
+              <input  class="item-imput" type="text" name="quantity" id="cantidad" placeholder="0" value="" >
+              <button id="add" class="item-bottom-add" type="button">+</button>
               <button id="agregar">Agregar al Carrito</button>
             </div>
 
@@ -81,8 +83,8 @@
 
       <section id="productos-relacionados container">
           <h2 class="title-slider">PRODUCTOS RELACIONADOS</h2>
+        <div>
         <div class="card-figuras">
-
           <article class="card-figura">
                 <a href="#">
                   <picture class="item-card-cover" >
@@ -136,6 +138,7 @@
                   <p class="card-promo">3 CUOTAS SIN INTERES</p>
                 </div>
           </article>
+        </div>
          
        </div>
 
@@ -170,6 +173,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="../js/item.js"></script>
 </body>
 
 
