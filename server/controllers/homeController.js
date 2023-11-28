@@ -5,7 +5,8 @@ const home = ((req, res) => {
 })
 
 const contact = ((req, res) => {
-    res.sendFile(path.join(__dirname, '../../client/pages', 'contacto.html'))
+    // res.sendFile(path.join(__dirname, '../../client/pages', 'contacto.html'))
+    res.render("index", {title: "No se ha encontrado la página"})
 })
 
 const about = ((req, res) => {
