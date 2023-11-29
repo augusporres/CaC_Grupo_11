@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/edit.css">
+    <title>Edit</title>
+</head>
+
+<body>
+
+    <!-- INICIO HEADER -->
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/shop.html">Ver Tienda</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">Admin</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">Salir</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN DE HEADER -->
+
+    <section>
+        <h2>EDITAR ITEM</h2>
+        <form>
+            <div class="choice">
+                <div>
+                    <label for="selectCategoria">
+                        <span class="texto_desc">Categoría:</span>
+                    </label>
+                    <select id="selectCategoria" name="usercard">
+                        <option value="visa">Figuras</option>
+                        <option value="mc">Mastercard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="selectLicencia">
+                        <span class="texto_desc">Licencia:</span>
+                    </label>
+                    <select id="selectLicencia" name="usercard">
+                        <option value="visa">Naruto Shippuden</option>
+                        <option value="mc">Mastercard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nombre_prod">
+                <label for="inputNombreProd" class="texto_desc">Nombre del producto:</label>
+                <input id="inputNombreProd" type="text" class="red-underline" value="Kakashi Hatake Shippuden Saga"
+                    readonly>
+            </div>
+
+            <textarea name="" id="textarea" cols="70"
+                rows="7">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori</textarea>
+
+            <div class="descripcion_prod">
+                <div>
+                    <label for="skuProd" class="texto_desc">SKU:</label>
+                    <input id="skuProd" class="red-underline" type="text" value="NAROO1O12" readonly>
+                </div>
+                <div>
+                    <label for="precioProd" class="texto_desc">Precio:</label>
+                    <input id="precioProd" class="red-underline" type="text" value="$1700.00" readonly>
+                </div>
+                <div>
+                    <label for="stock" class="texto_desc">Stock:</label>
+                    <input id="stock" class="red-underline" type="text" value="10" readonly>
+                </div>
+            </div>
+
+            <div class="descuento">
+                <div>
+                    <label for="descProd" class="texto_desc">Descuento:</label>
+                    <input id="descProd" class="red-underline" type="text" value="10%" readonly>
+                </div>
+
+                <label for="cuotasProd">
+                    <span class="texto_desc">Cuotas:</span>
+                </label>
+                <select id="cuotasProd" name="usercard">
+                    <option value="visa">6 Cuotas sin interés</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </div>
+            <div class="carga_archivo">
+                <label for="selecImg" class="texto_desc">Imágenes:</label>
+                <input id="selecImg" type="file" value="Elegir archivos">
+            </div>
+            <div class="imgs">
+                <div>
+                    <img src="../img/naruto/luke-1.webp" class="red-underline-fina" alt="">
+                    <p class="sub-tt">Frente</p>
+                </div>
+                <div>
+                    <img src="../img/naruto/luke-box.webp" class="red-underline-fina" alt="">
+                    <p class="sub-tt">Dorso</p>
+                </div>
+            </div>
+
+            <button type="submit" class="modificar-button">Modificar Producto</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <nav>
+                <picture>
+                    <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+                </picture>
+            </nav>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+</body>
+
+</html>
