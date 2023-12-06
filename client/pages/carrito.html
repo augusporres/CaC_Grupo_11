@@ -60,7 +60,7 @@
                     <li class="elementolistainterna">TOTAL</li>
                 </ul>
             </header>
-            <ul>
+            <ul class="espacioentrecajas">
                 <li class="cajagrande">
                     <div class="elementolistainternaproducto">
                         <picture>
@@ -74,12 +74,12 @@
                     </div>
                     <span class="elementolistainternaproducto">
                         <span class="controldecantidad">
-                            <input type="number" value="2" class="inputcantidad">
+                            <input type="number" value="2" class="inputcantidad" id="babyyoda">
                             <span class="direccionmasymenos">
-                                <button class="botonmasymenos">
+                                <button class="botonmasymenos" onclick="incrementarArticulo('babyyoda')">
                                     <img src="../img/icons/plus.svg" alt="Signo mas">
                                 </button>
-                                <button class="botonmasymenos">
+                                <button class="botonmasymenos" onclick="decrementarArticulo('babyyoda')">
                                     <img src="../img/icons/minus.svg" alt="Signo menos">
                                 </button>
                             </span>
@@ -105,12 +105,12 @@
                     </div>
                     <span class="elementolistainternaproducto">
                         <span class="controldecantidad">
-                            <input type="number" value="1" class="inputcantidad">
+                            <input type="number" value="1" class="inputcantidad" id="pidgeotto">
                             <span class="direccionmasymenos">
-                                <button class="botonmasymenos">
+                                <button class="botonmasymenos" onclick="incrementarArticulo('pidgeotto')">
                                     <img src="../img/icons/plus.svg" alt="Signo mas">
                                 </button>
-                                <button class="botonmasymenos">
+                                <button class="botonmasymenos" onclick="decrementarArticulo('pidgeotto')">
                                     <img src="../img/icons/minus.svg" alt="Signo menos">
                                 </button>
                             </span>
