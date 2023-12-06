@@ -527,8 +527,12 @@ header {
   
   #item .card-figuras{
     display: flex;
+    justify-content: center;
     margin-left: 10px;
     gap: 5px;
+  }
+   #item .card-figura{
+    width: 33%;
   }
   
   
@@ -543,15 +547,16 @@ header {
     gap: 5px;
     padding: 16px 16px 16px 16px;
     font-size:larger;
-    margin-left: 90px;
+    max-width: 250px;
+    margin: auto;
     text-align:justify;
   }
   
   #item .item-card-cover{
     display: flex;
     position: relative;
-    width: 500px;
-    margin-left: 80px;
+    width: 250px;
+    margin: auto;
   }
   
   #item .item-card-cover img {
