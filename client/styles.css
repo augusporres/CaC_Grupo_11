@@ -832,7 +832,64 @@ header {
     border-radius: 1px;
 }
 
+/*********************** REGISTER *************/
 
+#register body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    margin: 5;
+    padding: 5;
+}
+
+#register h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+#register .container_register {
+    margin: 20px;
+    padding: 20px;
+    background-color:white;
+    border-radius: 5px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#register form {
+    text-align: left;
+}
+
+#register label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#register input[type="text"],
+#register input[type="email"],
+#register input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#register input[type="submit"] {
+    background-color: rgb(160, 65, 65);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+}
+
+#register input[type="submit"]:hover {
+    background-color: #e61430;
+    color: black;
+    font-weight: bold;
+}
+
+/************ FIN REGISTER **************/
 
 /***********************SHOP**************************/
 
