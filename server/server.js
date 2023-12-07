@@ -13,7 +13,10 @@ app.use(express.json())
 app.use('/', express.static(path.join(__dirname, '/public')))
 
 
-app.use('/', require('./routes/homeRoutes'))
+//app.use('/', require('./routes/homeRoutes'))
+app.get('/', function(req, res) {
+    res.render('index.ejs')
+})
 app.use('/shop', require('./routes/shopRoutes'))
 app.use('/auth', require('./routes/authRoutes'))
 app.use('/admin', require('./routes/adminRoutes'))

@@ -1,11 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <%- include('./head.ejs'); %>
 </head>
-<body>
-    <h1><%= title%></h1>
+<body id="home">
+    <header>
+        <%- include('./header.ejs'); %>
+    </header>
+    <main>
+
+        <section>
+            <article>
+                <div class="image-overlay">
+                    <img class="banner" src="./img/funkos-banner.webp" alt="banner de la marca">
+                </div>
+                <div class="text-content">
+                    <h3>Nuevos Ingresos</h3>
+                    <br>
+                    <h4>Descubrí el próximo Funko Pop de tu colección</p>
+                    <br>
+                    <br>
+                    <button>
+                        <a href="./pages/shop.html">SHOP</a>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+
+        <!---------------------FUNKOS--------------------------->
+
+        <section class="containerCero">
+            <div class="group">
+                <div class="item">
+                    <article class="containerFunkoUno">
+                        <h3>STAR WARS & THE MANDALORIAN</h3>
+                        <br>
+                        <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <button class="buttonUno">
+                            <a href="#">VER COLECCIÓN</a>
+                        </button>
+                    </article>
+                </div>
+                <div class="item">
+                    <picture class="imgUno">
+                        <img src="/img/star-wars/baby-yoda-1.webp" alt="img Muñeco de Stars Wars verde">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="group reverse">
+                <div class="item">
+                    <article class="containerFunkoDos">
+                        <h3>POKEMON INDIGO</h3>
+                        <br>
+                        <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <button class="buttonDos">
+                            <a href="#">VER COLECCIÓN</a>
+                        </button>
+                    </article>
+                </div>
+                <div class="item">
+                    <picture>
+                        <img src="/img/pokemon/vulpix-1.webp" alt="img vulpin pokemon">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="item">
+                    <article class="containerFunkoTres">
+                        <h3>HARRY POTTER</h3>
+                        <br>
+                        <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <button class="buttonTres">
+                            <a href="#">VER COLECCIÓN</a>
+                        </button>
+                    </article>
+                </div>
+                <div class="item">
+                    <picture>
+                        <img src="/img/harry-potter/snape-patronus-1.webp" alt="img snape Harry Potter">
+                    </picture>
+                </div>
+            </div>
+
+        </section>
+
+        <!-----------------ÚLTIMOS LANZAMIENTOS--------------------->
+
+
+        <div>
+            <h2><strong>ÚLTIMOS LANZAMIENTOS</strong></h2>
+        </div>
+
+
+
+        <div class="glide">
+
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <section class="contenedor-flex">
+                            <article class="articuloUno">
+                                <h5>NUEVO</h5>
+                                <p></p>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
+                                    </picture>
+                                    <div class="funkoPrecio">
+                                        <p>STAR WARS</p>
+                                        <h4>STORMTROOPER LIGHTSABER</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="articuloDos">
+                                <h5>NUEVO</h5>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
+                                    </picture>
+                                    <div class="funkoPrecio1">
+                                        <p>POKEMON</p>
+                                        <h4>PIDGEOTTO</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="articuloTres">
+                                <h5>NUEVO</h5>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/harry-potter/luna-1.webp" alt="img luna harry potter">
+                                    </picture>
+                                    <div class="funkoPrecio2">
+                                        <p>HARRY POTTER</p>
+                                        <h4>LUNA LOVEGOOD LION MASK</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+
+                        </section>
+
+                    </li>
+                    <li class="glide__slide">
+                        <section class="contenedor-flex">
+                            <article class="articuloUno">
+                                <h5>NUEVO</h5>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
+                                    </picture>
+                                    <div class="funkoPrecio">
+                                        <p>STAR WARS</p>
+                                        <h4>STORMTROOPER LIGHTSABER</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="articuloDos">
+                                <h5>NUEVO</h5>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
+                                    </picture>
+                                    <div class="funkoPrecio1">
+                                        <p>POKEMON</p>
+                                        <h4>PIDGEOTTO</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="articuloTres">
+                                <h5>NUEVO</h5>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/harry-potter/luna-1.webp" alt="img luna harry potter">
+                                    </picture>
+                                    <div class="funkoPrecio2">
+                                        <p>HARRY POTTER</p>
+                                        <h4>LUNA LOVEGOOD LION MASK</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+
+                        </section>
+                    </li>
+                    <li class="glide__slide">
+
+                        <section class="contenedor-flex">
+                            <article class="articuloUno">
+                                <h5>NUEVO</h5>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/star-wars/trooper-1.webp" alt="img trooper Star Wards">
+                                    </picture>
+                                    <div class="funkoPrecio">
+                                        <p>STAR WARS</p>
+                                        <h4>STORMTROOPER LIGHTSABER</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="articuloDos">
+                                <h5>NUEVO</h5>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/pokemon/pidgeotto-1.webp" alt="img pidgeotto pokemon">
+                                    </picture>
+                                    <div class="funkoPrecio1">
+                                        <p>POKEMON</p>
+                                        <h4>PIDGEOTTO</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="articuloTres">
+                                <h5>NUEVO</h5>
+                                <a href="">
+                                    <picture>
+                                        <img src="/img/harry-potter/luna-1.webp" alt="img luna harry potter">
+                                    </picture>
+                                    <div class="funkoPrecio2">
+                                        <p>HARRY POTTER</p>
+                                        <h4>LUNA LOVEGOOD LION MASK</h4>
+                                        <p>$ 1799,99</p>
+                                        <p style="color: #1D84B5;"><strong>3 CUOTAS SIN INTERÉS</strong></p>
+                                    </div>
+                                </a>
+                            </article>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+    </main>
+    <footer class="footer">
+        <%- include('./footer.ejs'); %>
+    </footer>
+    <script src="/js/glinder.js"></script>
+
+    <script>
+        new Glide('.glide').mount()
+    </script>
 </body>
 </html>
