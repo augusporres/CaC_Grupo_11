@@ -522,14 +522,25 @@ header {
   }
   
   #item h4{
-    font-size:20px;
+    font-size:18px;
   }
   
   #item .card-figuras{
     display: flex;
+    justify-content: center;
     margin-left: 10px;
-    gap: 5px;
+    gap: 2px;
   }
+   #item .card-figura{
+    width: 33%;
+    transform: scale(1.5);
+    height: auto; 
+    margin: 60px; /* Establece el margen según tus preferencias */
+    padding: 50px; /* Establece el relleno según tus preferencias */
+    
+  }
+  
+
   
   
   #item .card-promo{
@@ -542,16 +553,17 @@ header {
     flex-direction: column;
     gap: 5px;
     padding: 16px 16px 16px 16px;
-    font-size:larger;
-    margin-left: 90px;
+    font-size: smaller;
+    max-width: 200px;
+    margin: auto;
     text-align:justify;
   }
   
   #item .item-card-cover{
     display: flex;
     position: relative;
-    width: 500px;
-    margin-left: 80px;
+    width: 250px;
+    margin: auto;
   }
   
   #item .item-card-cover img {
@@ -620,6 +632,11 @@ header {
     width: 5px; 
     margin-left: 10px;
     margin-top: 2px;
+  }
+
+  #item h2 {
+    font-size: 25px;
+    margin-left: 15px;
   }
 
 
