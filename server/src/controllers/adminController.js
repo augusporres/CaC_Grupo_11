@@ -1,5 +1,11 @@
-const admin = ((req, res) => {
-    res.render('admin.ejs')
+
+var modules = require('../models/model')
+
+const admin = (async (req, res) => {
+    const datos =  await modules.getAllShopsFromDb()
+    res.render('admin.ejs', {
+        productos : datos
+    })
 })
 
 const getCreate = ((req, res) => {

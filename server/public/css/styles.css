@@ -61,6 +61,8 @@ html {
 
 }
 
+
+
 a {
     text-decoration: none;
     font-family: inherit;
@@ -1432,6 +1434,9 @@ footer {
 }
 
 /*FIN CARRITO*/
+
+
+/*-----------ADMIN----------*/
 #admin .search__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1539,20 +1544,27 @@ footer {
 
 
 
-#admin .agregar   {
-color: #1F1F1F;
-text-align: right;
-font-family: "Inter";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.96px;
+
+#admin .agregar {
+    color: #1F1F1F;
+    text-align: right;
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
 }
 
-#admin .btn_add {
+#admin .btn {
     background:none;
     border: none;
+}
+
+#admin .btn:hover{
+    cursor: pointer;
+
+
 
 }
 
