@@ -18,7 +18,9 @@ const addShop = ((req, res) => {
     return res.status(200).json({ message: `Add Shop item by Id: ${id}`})
 })
 // - GET -> /shop/cart
-const getCart = ((req, res) => {})
+const getCart = ((req, res) => {
+    res.render('carrito.ejs')
+})
 // - POST -> /shop/cart
 const setCart = ((req, res) => {})
 

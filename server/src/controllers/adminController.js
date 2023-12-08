@@ -3,7 +3,7 @@ const admin = ((req, res) => {
 })
 
 const getCreate = ((req, res) => {
-    return res.status(200).json({ message: `GET Create admin`})
+    res.render('create.ejs')
 })
 
 const postCreate = ((req, res) => {

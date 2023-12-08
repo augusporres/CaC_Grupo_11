@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./head.ejs'); %>
+    </head>
+<body id="carrito">
+    <!-- INICIO HEADER -->
+    <header>
+        <%- include('./header.ejs'); %>
+    </header>
+    <!-- FIN DE HEADER -->
+    <!--INICIO MAIN-->
+    <main class="formatodepagina">
+        <h2 class="titulo">
+            <span class="subrayado">CARRITO DE COMPRAS</span>
+        </h2>
+        <header class="cajachica">
+            <ul class="listainterna">
+                <li class="elementolistainterna">DETALLE DE PRODUCTO</li>
+                <li class="elementolistainterna">CANTIDAD</li>
+                <li class="elementolistainterna">TOTAL</li>
+            </ul>
+        </header>
+        <ul class="espacioentrecajas">
+            <li class="cajagrande">
+                <div class="elementolistainternaproducto">
+                    <picture>
+                        <img src="../img/star-wars/baby-yoda-1.webp" alt="Figura de Baby Yoda" height="118px" width="118px">
+                    </picture>
+                    <div class="descripcionproducto">
+                        <h5 class="titulodescripcion">Baby Yoda Blueball</h5>
+                        <p class="nombredescripcion">Star Wars</p>
+                        <p class="preciodescripcion">Precio unitario: $ 1799,99</p>
+                    </div>    
+                </div>
+                <span class="elementolistainternaproducto">
+                    <span class="controldecantidad">
+                        <input type="number" value="2" class="inputcantidad" id="babyyoda">
+                        <span class="direccionmasymenos">
+                            <button class="botonmasymenos" onclick="incrementarArticulo('babyyoda')">
+                                <img src="../img/icons/plus.svg" alt="Signo mas">
+                            </button>
+                            <button class="botonmasymenos" onclick="decrementarArticulo('babyyoda')">
+                                <img src="../img/icons/minus.svg" alt="Signo menos">
+                            </button>
+                        </span>
+                    </span>
+                </span>
+                <p class="elementolistainternaproducto preciototal">$ 3599,98</p>
+               <span class="elementolistainternaproducto">
+                    <button class="botonremover" onclick="mostrarProximamente()">
+                        <img src="../img/icons/remove.svg" alt="remove"/>
+                    </button>
+                </span>
+            </li>
+            <li class="cajagrande">
+                <div class="elementolistainternaproducto">
+                    <picture>
+                        <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura de Pidgeotto" height="118px" width="118px">
+                    </picture>
+                    <div class="descripcionproducto">
+                        <h5 class="titulodescripcion">Pidgeotto</h5>
+                        <p class="nombredescripcion">Pokemon</p>
+                        <p class="preciodescripcion">Precio unitario: $ 1799,99</p>
+                    </div>    
+                </div>
+                <span class="elementolistainternaproducto">
+                    <span class="controldecantidad">
+                        <input type="number" value="1" class="inputcantidad" id="pidgeotto">
+                        <span class="direccionmasymenos">
+                            <button class="botonmasymenos" onclick="incrementarArticulo('pidgeotto')">
+                                <img src="../img/icons/plus.svg" alt="Signo mas">
+                            </button>
+                            <button class="botonmasymenos" onclick="decrementarArticulo('pidgeotto')">
+                                <img src="../img/icons/minus.svg" alt="Signo menos">
+                            </button>
+                        </span>
+                    </span>
+                </span>
+                <p class="elementolistainternaproducto preciototal">$ 1799,99</p>
+                <span class="elementolistainternaproducto">
+                    <button class="botonremover" onclick="mostrarProximamente()">
+                        <img src="../img/icons/remove.svg" alt="remove"/>
+                    </button>
+                </span>
+            </li>
+        </ul>
+    </main>
+    <section class="seccionresumen formatodepagina">
+        <div class="resumencontenedor"> 
+            <h3 class="titulo subtitulo"><span class="subrayado">RESUMEN</span></h3>
+            <div class="cajachica cajachicavertical">
+                <span class="categoriaresumen">
+                    <h6 class="titulodecategoria">cantidad de elementos</h6>
+                    <p class="valordecategoria">3</p>
+                </span>
+                <span class="categoriaresumen">
+                    <h6 class="titulodecategoria">subtotal</h6>
+                    <p class="valordecategoria">$ 5.399,97</p>
+                </span>
+                <span class="categoriaresumen">
+                    <h6 class="titulodecategoria">envio</h6>
+                    <p class="valordecategoria">$ 0,00</p>
+                </span>
+                <span class="categoriaresumen">
+                    <h6 class="titulototal">total</h6>
+                    <p class="valordeltotal">$5.399,97</p>
+                </span>
+            </div>
+                <a href="" class="botonpagar" onclick="mostrarProximamente()">ir a pagar </a>
+            </div>
+    </section>
+    
+    
+    <!--FIN MAIN-->
+    <footer class="footer">
+        <%- include('./footer.ejs'); %>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="../scripts/carrito.js"></script>
+</body>
+</html>
