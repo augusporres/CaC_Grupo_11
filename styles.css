@@ -567,14 +567,14 @@ footer{
 
 /* --- ADMIN HTML --- */
 
-.search__container {
+#admin .search__container {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 40px;
 
 }
 
-.search {
+#admin .search {
     width: 590.88px;
     height: 44.28px;
     display: flex;
@@ -582,7 +582,7 @@ footer{
 
 }
 
-.search__button {
+#admin .search__button {
     Width: 40px;
     Height: 30.76px;
     Left: 5.25px;
@@ -591,7 +591,7 @@ footer{
 
 }
 
-.search__imput {
+#admin .search__imput {
         width: 529.76px;
         height: 44.28px;
         top: 180px;
@@ -601,7 +601,7 @@ footer{
 
 }
 
-.table_primari ¨{
+#admin .table_primari ¨{
 
     width: 1440px;
     height: 1568px;
@@ -612,7 +612,7 @@ footer{
 
 
 
-table {
+#admin table {
     border-collapse: collapse;
     text-align: left;
     margin: auto;
@@ -624,26 +624,26 @@ table {
 
 }
 
-tr {
+#admin tr {
     transition: all ease 300ms;
 
 }
 
 
 
-tr:hover {
+#admin tr:hover {
     background-color: #48b9ee;
     color: #FFF;
 
 }
 
-tr:active {
+#admin tr:active {
     background-color: #159ad8;
     color: #FFF;
 
 }
 
-.flex_item1 {
+#admin .flex_item1 {
     position: relative;
     gap: 100px;
 
@@ -660,7 +660,7 @@ tr:active {
     Top: 518.65px;
     Left: 420.25px;}---*/
 
-.title_list{
+#admin .title_list{
     color: #1F1F1F;
     text-align: left;
     font-family: "Raleway";
@@ -674,7 +674,7 @@ tr:active {
 
 
 
-.agregar   {
+#admin .agregar   {
 color: #1F1F1F;
 text-align: right;
 font-family: "Inter";
@@ -685,13 +685,13 @@ line-height: normal;
 letter-spacing: 0.96px;
 }
 
-.btn_add {
+#admin .btn_add {
     background:none;
     border: none;
 
 }
 
-.table  {width: 1086.268px;
+#admin .table  {width: 1086.268px;
     height: 61px;
     flex-shrink: 0;
 
@@ -700,19 +700,19 @@ letter-spacing: 0.96px;
 
 ---------------------------------------------------------------------
 
-.id {
-color: #1F1F1F;
-text-align: right;
-font-family: "Inter";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.96px;
+#admin .id {
+    color: #1F1F1F;
+    text-align: right;
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
 
 }
 
-.codigo {
+#admin .codigo {
     color: #1F1F1F;
     text-align: right;
     font-family: "Inter";
@@ -725,7 +725,7 @@ letter-spacing: 0.96px;
 
 }
 
-.name_product {
+#admin .name_product {
     color: #1F1F1F;   
     text-align: right;
     font-family: "Inter";
@@ -737,7 +737,7 @@ letter-spacing: 0.96px;
 
 }
 
-.categoria {
+#admin .categoria {
 
     color: #1F1F1F;
     text-align: right;
@@ -750,14 +750,14 @@ letter-spacing: 0.96px;
 }
 
 
-.container {
+#admin .container {
     width: 1086.268px;
 height: 61px;
 flex-shrink: 0;
 
 }
 
-.order {color: #1F1F1F;
+#admin .order {color: #1F1F1F;
 
     text-align: center;
     font-family: "Inter";
@@ -767,7 +767,7 @@ flex-shrink: 0;
     line-height: 253.523%; /* 60.845px */
     letter-spacing: 0.96px;}
 
-.cod {color: #1F1F1F;
+#admin .cod {color: #1F1F1F;
     text-align: center;
     font-family: "Inter";
     font-size: 24px;
@@ -776,7 +776,7 @@ flex-shrink: 0;
     line-height: 253.523%; /* 60.845px */
     letter-spacing: 0.96px;}
 
-.name {
+#admin .name {
     color: #1F1F1F;
 font-family: "Inter";
 font-size: 24px;
@@ -786,7 +786,7 @@ line-height: 253.523%; /* 60.845px */
 letter-spacing: 0.96px;
 }
 
-.genero {
+#admin .genero {
     color: #1F1F1F;
 font-family: "Inter";
 font-size: 24px;
@@ -796,7 +796,18 @@ line-height: 253.523%; /* 60.845px */
 letter-spacing: 0.96px;
 }
 
+td.edit_button button{
+   border: 0;
+   background-color: #FFF;
+    width: 45px;
+  
+}
 
+td.delete_icon button{
+    border: 0;
+   background-color: #FFF;
+   width: 45px;
+}
 
 
 
