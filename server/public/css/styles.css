@@ -1024,6 +1024,10 @@ footer {
 #shop .slider__items{
     display: flex;
     gap:var(--spacing-24);
+    flex-wrap: wrap;
+}
+#shop .slider__item{
+    width: 30%;
 }
 
 /*.slider__item{

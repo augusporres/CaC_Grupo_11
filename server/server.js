@@ -1,10 +1,12 @@
 const express = require('express')
 require('dotenv').config()
 
-var database = require('./src/config/database')
+var pool = require('./src/config/database')
 const app = express()
 const path = require('path')
 const PORT = process.env.PORT || 3000
+
+
 
 // motor de plantilla
 app.set('view engine', 'ejs');

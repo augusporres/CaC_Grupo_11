@@ -1,10 +1,12 @@
-// const Shop = require('../models/Shop')
+var getAllShopsFromDb = require('../models/model')
 
 // @desc Get all shops
 // @route GET /shop
 // @access Private
-const getAllShops = ((req, res) => {
-    res.render('shop.ejs')
+const getAllShops = (async (req, res) => {
+    // funcion para traer datos de la base
+    const datos =  await getAllShopsFromDb()
+    res.render('shop.ejs', {productos: datos})
 })
 
 // - GET -> /shop/item/:id
