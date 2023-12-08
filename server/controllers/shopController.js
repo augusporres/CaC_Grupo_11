@@ -4,7 +4,7 @@
 // @route GET /shop
 // @access Private
 const getAllShops = ((req, res) => {
-    return res.status(200).json({ message: 'Get All Shops!'})
+    res.render('shop.ejs')
 })
 
 // - GET -> /shop/item/:id
