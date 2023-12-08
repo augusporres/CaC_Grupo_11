@@ -1,0 +1,102 @@
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+section h2 {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+.choice {
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.choice div {
+    margin-right: 5%;
+}
+
+.nombre_prod {
+    padding-bottom: 3%;
+}
+
+.descripcion_prod {
+    display: flex;
+    gap: 3%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.descuento {
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#textarea {
+    font-family: 'Raleway', sans-serif;
+    padding: 1%;
+}
+
+#skuProd,
+#precioProd,
+#stock,
+#descProd {
+    font-size: 10px;
+}
+
+.imgs {
+    display: flex;
+    padding: 3%;
+    gap: 5%;
+}
+
+.imgs img {
+    width: 100px;
+}
+
+.texto_desc {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 5px;
+}
+
+.sub-tt {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.red-underline {
+    border-style: none;
+    border-bottom: 2px solid #FF3333;
+    text-align: left;
+}
+
+.red-underline-fina {
+    border-style: none;
+    border-bottom: 1px solid #FF3333;
+    text-align: center;
+}
+
+.modificar-button {
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: #FF3333;
+    color: white;
+    border-style: none;
+    padding: 9px;
+    margin-left: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}

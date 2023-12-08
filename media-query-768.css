@@ -1,8 +1,0 @@
-@media only screen and (max-width: 768px) {
-    #login .logo img{
-        max-width: 10%;
-    }
-    #login .logo .titulo{
-        max-width: 50%;
-    }
-}

@@ -1,0 +1,20 @@
+{
+  "name": "cac_grupo_11",
+  "version": "1.0.0",
+  "description": "Este es el repositorio para el grupo 11 :)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
