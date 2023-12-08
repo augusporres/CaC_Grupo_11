@@ -1,8 +1,9 @@
 const path = require('path')
 
 const home = ((req, res) => {
-    //res.sendFile(path.join(__dirname, '../../client', 'index.html'))
-    res.render("index")
+    
+    res.render('index.ejs')
+    
 })
 
 const contact = ((req, res) => {

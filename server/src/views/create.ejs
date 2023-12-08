@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./head.ejs'); %>
+    </head>
+<body id="create">
+    <!-- INICIO HEADER -->
+    <header>
+        <%- include('./header_auth.ejs'); %>
+    </header>
+    <!-- FIN DE HEADER -->
+    <!-- INICIO ASIDE-->
+    <!--inicio form-->
+    <section class="main-content">
+        <div class="add-item">
+            <h2>Crear Nuevo Item</h2>
+            <form>
+                <div class="choice">
+                    <div>
+                        <label for="selectCategoria">
+                            <span>Categoría:</span>
+                        </label>
+                        <select id="selectCategoria" name="usercard">
+                            <option value="visa">Seleccionar</option>
+                            <option value="mc">Mastercard</option>
+                            <option value="amex">American Express</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="selectLicencia">
+                            <span>Licencia:</span>
+                        </label>
+                        <select id="selectLicencia" name="usercard">
+                            <option value="visa">Naruto Shippuden</option>
+                            <option value="mc">Mastercard</option>
+                            <option value="amex">American Express</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="nombre-prod">
+                    <label for="inputNombreProd">Nombre del producto:</label>
+                    <input id="inputNombreProd" type="text" value="Kakashi Hatake Shippuden Saga" readonly class="red-underline">
+                </div>
+                
+                <textarea name="" id="" cols="70"
+                rows="7" placeholder="Descripción del producto"></textarea>
+                
+                <div class="descripcion_prod">
+                    <div class="sku">
+                        <label for="skuProd">SKU:</label>
+                        <input id="skuProd" type="text" value="" placeholder="SSKA1ASB10" readonly class="red-underline">
+                    </div>
+                    <div class="precio">
+                        <label for="precioProd">Precio:</label>
+                        <input id="precioProd" type="text" value="" placeholder="1700"readonly class="red-underline">
+                    </div>
+                    <div class="stock">
+                        <label for="stock">Stock:</label>
+                        <input id="stock" type="text" value="" placeholder="10" readonly class="red-underline">
+                    </div>
+                </div>
+                
+                <div class="pago">
+                    <div class="descuento">
+                        <label for="descProd">Descuento:</label>
+                        <input id="descProd" type="text" value="" placeholder="0%" readonly class="red-underline">
+                    </div>
+                    <div class="cuotas">
+                        <label for="cuotasProd">
+                            <span>Cuotas:</span>
+                        </label>
+                        <select id="cuotasProd" name="usercard">
+                            <option value="visa">6 Cuotas sin interés</option>
+                            <option value="mc">3 Cuotas sin interés</option>
+                            <option value="amex">1 Cuotas sin interés</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="carga_archivo">
+                    <label for="selecImg">Imágenes:</label>
+                    <input id="selecImg" type="file" value="Elegir archivos">
+                </div>
+            </div>
+            <div class="add-button">
+                <button type="submit">Agregar Producto</button>
+                <button type="submit">Limpiar</button>
+            </div>
+        </form>
+    </section>
+    <!--FIN MAIN-->
+    <footer class="footer">
+        <%- include('./footer.ejs'); %>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
