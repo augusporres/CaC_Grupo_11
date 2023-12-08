@@ -1,18 +1,19 @@
-var getAllShopsFromDb = require('../models/model')
+var modules = require('../models/model')
 
 // @desc Get all shops
 // @route GET /shop
 // @access Private
 const getAllShops = (async (req, res) => {
     // funcion para traer datos de la base
-    const datos =  await getAllShopsFromDb()
+    const datos =  await modules.getAllShopsFromDb()
     res.render('shop.ejs', {productos: datos})
 })
 
 // - GET -> /shop/item/:id
-const getShopItemById = ((req, res) => {
+const getShopItemById = (async (req, res) => {
     const id = req.params.id
-    return res.status(200).json({ message: `Get Shop item by Id: ${id}`})
+    var dato = await modules.getShopItemById(id)
+    res.render('item.ejs', {producto: dato})
 })
 // - POST -> /shop/item/:id/add
 const addShop = ((req, res) => {

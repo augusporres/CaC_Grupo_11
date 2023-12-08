@@ -1,5 +1,5 @@
 const admin = ((req, res) => {
-    return res.status(200).json({ message: 'GET Admin!'})
+    res.render('admin.ejs')
 })
 
 const getCreate = ((req, res) => {
