@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./head.ejs'); %>
+    </head>
+<body id="register">
+    <!-- INICIO HEADER -->
+    <header>
+        <%- include('./header_auth.ejs'); %>
+    </header>
+    <!-- FIN DE HEADER -->
+    <section>
+        <div id="main" class="container_register">
+            <h2>CREA TU CUENTA</h2><br>
+            <h3>Completa el formulario para ser parte de Funkos</h3>
+    
+            <div class="row">
+                <label for="nombre" class="col-lg-2 col-form-label form-control-lg" >Nombre:</label>
+                <div class="col-lg-10"> 
+                    <input type="text" id="nombre" class="form-control" name="nombre" required><br>
+                </div>
+    
+                <label for="apellido" class="col-lg-2 col-form-label form-control-lg">Apellido:</label>
+                <div class="col-lg-10">
+                    <input type="text" id="apellido" class="form-control" name="apellido" required><br>
+                </div>
+    
+                <label for="correo" class="col-lg-2 col-form-label form-control-lg">Correo Electrónico:</label>
+                <div class="col-lg-10">
+                    <input type="email" id="correo"  class="form-control" name="correo" required><br>
+                </div>
+    
+    
+                <label for="clave1" class="col-lg-2 col-form-label form-control-lg">Contraseña:</label>
+                <div class="col-lg-10">
+                    <input type="password" id="clave1" class="form-control" name="clave" required><br><br>
+                </div>
+    
+                <label for="clave2" class="col-lg-2 col-form-label form-control-lg">Repita contraseña:</label>
+                <div class="col-lg-10">
+                    <input type="password" id="clave2" name="clave" required><br><br>            
+                </div>
+            </div>
+    
+            <div class="row row-cols-sm-auto align-items-center">
+                <div class="col-12">
+                    <input class="btn" type="submit" value="registrarse">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
+                        <label class="form-check-label" for="terminos">Acepto <a href="reg_terminos.html">Terminos y condiciones</a></label>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        </section>
+    <!--FIN MAIN-->
+    <footer class="footer">
+        <%- include('./footer.ejs'); %>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

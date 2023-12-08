@@ -1,16 +1,19 @@
-// const Shop = require('../models/Shop')
+var modules = require('../models/model')
 
 // @desc Get all shops
 // @route GET /shop
 // @access Private
-const getAllShops = ((req, res) => {
-    return res.status(200).json({ message: 'Get All Shops!'})
+const getAllShops = (async (req, res) => {
+    // funcion para traer datos de la base
+    const datos =  await modules.getAllShopsFromDb()
+    res.render('shop.ejs', {productos: datos})
 })
 
 // - GET -> /shop/item/:id
-const getShopItemById = ((req, res) => {
+const getShopItemById = (async (req, res) => {
     const id = req.params.id
-    return res.status(200).json({ message: `Get Shop item by Id: ${id}`})
+    var dato = await modules.getShopItemById(id)
+    res.render('item.ejs', {producto: dato})
 })
 // - POST -> /shop/item/:id/add
 const addShop = ((req, res) => {
@@ -18,7 +21,9 @@ const addShop = ((req, res) => {
     return res.status(200).json({ message: `Add Shop item by Id: ${id}`})
 })
 // - GET -> /shop/cart
-const getCart = ((req, res) => {})
+const getCart = ((req, res) => {
+    res.render('carrito.ejs')
+})
 // - POST -> /shop/cart
 const setCart = ((req, res) => {})
 
