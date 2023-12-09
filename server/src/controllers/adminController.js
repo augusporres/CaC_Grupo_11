@@ -26,9 +26,13 @@ const updateById = ((req, res) => {
     return res.status(200).json({ message: `PUT Edit Admin id: ${id}`})
 })
 
-const deleteById = ((req, res) => {
+const deleteById = (async (req, res) => {
     const id = req.params.id
-    return res.status(200).json({message: `DELETE by id: ${id}`})
+    await modules.deleteShopItemById(id)
+    const datos =  await modules.getAllShopsFromDb()
+    res.render('admin.ejs', {
+        productos : datos
+    })
 })
 
 module.exports = {

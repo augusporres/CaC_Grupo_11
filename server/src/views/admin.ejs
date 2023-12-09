@@ -73,8 +73,9 @@
                                     </button>
                                </td>
                                <td class="delete_icon">
-                                       <button type="button" class="btn"><img src="/img/icons/delete_trash.svg" alt=""></button>
-                               </td>
+                                    <button data-id="<%= product.product_id %>" type="button"
+                                        class="btn botonBorrar"><img src="/img/icons/delete_trash.svg" alt=""></button>
+                                </td>
                            </tr>
                 <% }); %>
                 
@@ -91,6 +92,24 @@
         <%- include('./footer.ejs'); %>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+        const botonesBorrar = document.getElementsByClassName('botonBorrar');
+        Array.from(botonesBorrar).forEach(function (boton) {
+            boton.addEventListener('click', function () {
+                var id = this.getAttribute('data-id');
+
+                var confirmar = confirm("¿Estás seguro de que quieres borrar este articulo?");
+
+                // Si "confirmar" == TRUE entonces :
+                if (confirmar) {
+                    fetch('/admin/edit/delete/' + id, { method: 'DELETE' })
+                        .then(() => window.location.reload())
+                        .catch(error => console.error('Error:', error));
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

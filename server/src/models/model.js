@@ -21,4 +21,12 @@ const getShopItemById = async (req) => {
     }
 }
 
-module.exports = {getAllShopsFromDb, getShopItemById}
+const deleteShopItemById = async (req) => {
+    try {
+        await pool.query(`DELETE FROM product WHERE product_id = ${ req }`)
+    } catch (error) {
+        console.error(error)
+        throw error
+    }
+}
+module.exports = {getAllShopsFromDb, getShopItemById, deleteShopItemById}
