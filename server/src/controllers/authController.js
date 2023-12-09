@@ -1,5 +1,5 @@
 const getLogin = ((req, res) => {
-    res.status(200).json({message: 'GET Login succeed!'})
+    res.render('login.ejs')
 })
 
 const postLogin = ((req, res) => {
@@ -7,7 +7,7 @@ const postLogin = ((req, res) => {
 })
 
 const getRegister = ((req, res) => {
-    res.status(200).json({message: 'GET Register succeed!'})
+    res.render('register.ejs')
 })
 
 const postRegister = ((req, res) => {

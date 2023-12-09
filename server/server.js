@@ -1,22 +1,26 @@
 const express = require('express')
+require('dotenv').config()
 
+var pool = require('./src/config/database')
 const app = express()
 const path = require('path')
 const PORT = process.env.PORT || 3000
 
+
+
 // motor de plantilla
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/src/views');
 
 app.use(express.json())
 
 app.use('/', express.static(path.join(__dirname, '/public')))
 
 
-app.use('/', require('./routes/homeRoutes'))
-app.use('/shop', require('./routes/shopRoutes'))
-app.use('/auth', require('./routes/authRoutes'))
-app.use('/admin', require('./routes/adminRoutes'))
+app.use('/', require('./src/routes/homeRoutes'))
+app.use('/shop', require('./src/routes/shopRoutes'))
+app.use('/auth', require('./src/routes/authRoutes'))
+app.use('/admin', require('./src/routes/adminRoutes'))
 
 app.all('*', (req, res) => {
     res.status(404)
