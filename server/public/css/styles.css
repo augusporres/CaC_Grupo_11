@@ -1599,7 +1599,7 @@ footer {
 
 }
 
----------------------------------------------------------------------
+
 
 #admin .id {
     color: #1F1F1F;
@@ -1615,7 +1615,7 @@ footer {
 
 #admin .codigo {
     color: #1F1F1F;
-    text-align: right;
+    text-align: center;
     font-family: "Inter";
     font-size: 24px;
     font-style: normal;
@@ -1628,7 +1628,7 @@ footer {
 
 #admin .name_product {
     color: #1F1F1F;   
-    text-align: right;
+    text-align: left;
     font-family: "Inter";
     font-size: 24px;
     font-style: normal;
@@ -1641,7 +1641,7 @@ footer {
 #admin .categoria {
 
     color: #1F1F1F;
-    text-align: right;
+    text-align: left;
     font-family: "Inter";
     font-size: 24px;
     font-style: normal;
