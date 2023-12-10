@@ -49,7 +49,7 @@ const getAllLicencesFromDb = async () => {
 
 const createProduct = async(body) => {
     try {
-        await pool.query(`INSERT INTO product (product_name, product_description, price, stock, discount, sku, dues, image_front, image_back, create_time, licence_id, category_id) VALUES('${body.product_name}', '${body.description}', ${body.price}, ${body.stock}, ${body.discount}, '${body.sku}', ${body.due}, '${body.img}', '${body.img}', current_timestamp(), ${body.licence},${body.category})`)
+        await pool.query(`INSERT INTO product (product_name, product_description, price, stock, discount, sku, dues, image_front, image_back, create_time, licence_id, category_id) VALUES('${body.product_name}', '${body.description}', ${body.price}, ${body.stock}, ${body.discount}, '${body.sku}', ${body.due}, '${body.img[0]}', '${body.img[1]}', current_timestamp(), ${body.licence},${body.category})`)
     } catch (error) {
         console.error(error)
         throw error
