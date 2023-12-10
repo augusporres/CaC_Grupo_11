@@ -26,7 +26,11 @@ const getCreate = (async (req, res) => {
 
 const postCreate = (async (req, res) => {
     const productos = await modules.getAllProductsFromDb()
-    req.body.img = '/img/' + req.body.img
+    const licencias = await modules.getAllLicencesFromDb()
+    const licence_id = req.body.licence
+    const licencia = licencias.find(lic => lic.licence_id == licence_id)
+    const rutaImgLicencia = licencia.licence_image.split('/')[2]
+    req.body.img = '/img/' + rutaImgLicencia + '/' + req.body.img
     const response = await modules.createProduct(req.body)
     res.redirect('/admin')
 })
