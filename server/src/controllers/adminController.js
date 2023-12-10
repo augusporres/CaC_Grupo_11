@@ -2,10 +2,15 @@
 var modules = require('../models/model')
 
 const admin = (async (req, res) => {
-    const datos =  await modules.getAllProductsFromDb()
-    res.render('admin.ejs', {
-        productos : datos
-    })
+    session = req.session
+    if(session.userId){
+        const datos =  await modules.getAllProductsFromDb()
+        res.render('admin.ejs', {
+            productos : datos
+        })
+    } else {
+        res.redirect('/auth/login')
+    }
 })
 
 const getCreate = (async (req, res) => {

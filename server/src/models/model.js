@@ -59,7 +59,6 @@ const createProduct = async(body) => {
 const getUserByMailFromDb = async(req) => {
     try {
         var user = await pool.query(`SELECT * FROM user WHERE email = '${req.usermail}' AND password = '${req.password}'`)
-        console.log(user[0][0])
         return user[0][0]
     } catch (error) {
         console.error(error)
