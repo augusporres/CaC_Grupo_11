@@ -41,7 +41,7 @@
             </div>
             <div class="nombre_prod">
                 <label for="inputNombreProd" class="texto_desc">Nombre del producto:</label>
-                <input id="inputNombreProd" type="text" class="red-underline" name="product_name" placeholder="<%= producto.product_name %>">
+                <input id="inputNombreProd" type="text" class="red-underline" name="product_name" value="<%= producto.product_name %>">
             </div>
 
             <textarea name="description" id="textarea" cols="70"
@@ -50,22 +50,22 @@
             <div class="descripcion_prod">
                 <div>
                     <label for="skuProd" class="texto_desc">SKU:</label>
-                    <input id="skuProd" class="red-underline" name="sku" type="text" placeholder="<%= producto.sku %>">
+                    <input id="skuProd" class="red-underline" name="sku" type="text" value="<%= producto.sku %>">
                 </div>
                 <div>
                     <label for="precioProd" class="texto_desc">Precio:</label>
-                    <input id="precioProd" class="red-underline" name ="price" type="number" placeholder="<%= producto.price %>">
+                    <input id="precioProd" class="red-underline" name ="price" type="number" value="<%= producto.price %>">
                 </div>
                 <div>
                     <label for="stock" class="texto_desc">Stock:</label>
-                    <input id="stock" class="red-underline" name="stock" type="number" placeholder="<%= producto.stock %>">
+                    <input id="stock" class="red-underline" name="stock" type="number" value="<%= producto.stock %>">
                 </div>
             </div>
 
             <div class="descuento">
                 <div>
                     <label for="descProd" class="texto_desc">Descuento:</label>
-                    <input id="descProd" class="red-underline" name="discount" type="number" placeholder="<%= producto.discount %>">
+                    <input id="descProd" class="red-underline" name="discount" type="number" value="<%= producto.discount %>">
                 </div>
 
                 <label for="cuotasProd">
