@@ -25,8 +25,11 @@ const getCreate = (async (req, res) => {
 })
 
 const postCreate = (async (req, res) => {
-    const productos = await modules.getAllProductsFromDb()
-    req.body.img = '/img/' + req.body.img
+    const licencias = await modules.getAllLicencesFromDb()
+    const licence_id = req.body.licence
+    const licencia = licencias.find(lic => lic.licence_id == licence_id)
+    const rutaImgLicencia = licencia.licence_image.split('/')[2]
+    req.body.img = '/img/' + rutaImgLicencia + '/' + req.body.img
     const response = await modules.createProduct(req.body)
     res.redirect('/admin')
 })
@@ -43,9 +46,16 @@ const getAdminById = (async (req, res) => {
     })
 })
 
-const updateById = ((req, res) => {
-    const id = req.params.id
-    return res.status(200).json(req.body)
+const updateById = (async (req, res) => {
+    req.body.product_id = req.params.id
+    const licencias = await modules.getAllLicencesFromDb()
+    const licence_id = req.body.licence
+    const licencia = licencias.find(lic => lic.licence_id == licence_id)
+    const rutaImgLicencia = licencia.licence_image.split('/')[2]
+    req.body.img = '/img/' + rutaImgLicencia + '/' + req.body.img
+    console.log(req.body)
+    await modules.udpateItemById(req.body)
+    res.redirect('/shop')
 })
 
 const deleteById = (async (req, res) => {
@@ -56,6 +66,7 @@ const deleteById = (async (req, res) => {
         productos : datos
     })
 })
+// category=1&licence=1&product_name=&description=Figura+coleccionable+de+Luke+Skylwalker+%26+Grogu+-+The+Mandalorian+Saga.&sku=asdfa&price=1500&stock=10&discount=1&due=6&img=
 
 module.exports = {
     admin,
