@@ -178,15 +178,17 @@ header {
     font-size: 16px;
     /* =16px */
     max-width: 90%;
-    height: 54vh;
+    height: vh;
     min-height: 500px;
     margin: 0 22em;
     padding: 20px;
     font-family: 'Inter', sans-serif;
 }
-
+#create .edit-form {
+    width: 50vw;
+}
 #create .add-item {
-    width: 75%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -217,6 +219,7 @@ header {
 
 #create label {
     font-weight: bold;
+    margin-right: 10px;
 }
 
 #create .choice div {
@@ -224,11 +227,12 @@ header {
 }
 
 #create .nombre-prod {
+    display: flex;
     padding-bottom: 3%;
 }
 
 #create .nombre-prod input {
-    min-width: 23%;
+    min-width: 30%;
 }
 
 #create .red-underline {
@@ -236,12 +240,14 @@ header {
     border-bottom: 3px solid #FF3333;
     text-align: center;
 }
-
+#create .textarea-descripcion {
+    width: 85%;
+}
 #create .descripcion_prod {
     display: flex;
     max-width: 97%;
     gap: 0.6em;
-    width: 60%;
+    width: 100%;
 }
 
 #create .descripcion_prod div {
@@ -269,19 +275,23 @@ header {
 }
 
 #create .descuento {
-    width: 18%;
+    width: 30%;
+    display: flex;
+}
+#create .carga_archivo {
+    display: flex;
 }
 
 #create .cuotas {
-    width: 70%;
+    width: 50%;
 }
 
 #create .descuento input {
-    width: 27%;
+    width: 50px;
 }
 
 #create .cuotas select {
-    width: 35%;
+    width: 65%;
 }
 
 #create .add-button button {
