@@ -32,13 +32,13 @@ const postCreate = (async (req, res) => {
     const rutaImgLicencia = licencia.licence_image.split('/')[2]
 
     const imagenes = []
-
-    if (typeof req.body.img === 'array') {
+    
+    if (typeof req.body.img === 'string') {
+        imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img)
+        imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img)
+    } else {
         imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img[0])
         imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img[1])
-    } else {
-        imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img)
-        imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img)
     }
 
     
