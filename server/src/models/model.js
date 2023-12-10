@@ -90,12 +90,13 @@ const createUser = async(body) => {
 
 const udpateItemById = async(body) => {
     try {
-        await pool.query(`UPDATE product SET product_name = '${ body.product_name }', category_id= ${ body.category }, licence_id = ${ body.licence }, product_description= '${ body.description }', price= ${ body.price }, stock= ${ body.stock }, discount= ${ body.discount }, sku= '${ body.sku }', dues= ${ body.due }, image_front= '${ body.img }', image_back= '${ body.img }' WHERE product_id = ${ body.product_id }`)
+        await pool.query(`UPDATE product SET product_name = '${ body.product_name }', category_id= ${ body.category }, licence_id = ${ body.licence }, product_description= '${ body.description }', price= ${ body.price }, stock= ${ body.stock }, discount= ${ body.discount }, sku= '${ body.sku }', dues= ${ body.due }, image_front= '${body.img[0]}', image_back= '${body.img[1]}' WHERE product_id = ${ body.product_id }`)
     } catch (error) {
         console.error(error)
         throw error
     }
 }
+
 module.exports = {
     getAllProductsFromDb, 
     getShopItemById, 
