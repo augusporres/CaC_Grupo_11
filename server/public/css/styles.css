@@ -303,6 +303,9 @@ header {
     color: white;
     border-style: none;
 }
+#create .add-button:hover {
+    cursor: pointer;
+}
 
 #create .imgs {
     display: flex;
