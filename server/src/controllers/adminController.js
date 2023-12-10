@@ -46,8 +46,16 @@ const getAdminById = (async (req, res) => {
     })
 })
 
-const updateById = ((req, res) => {
+const updateById = (async (req, res) => {
+    req.body.product_id = req.params.id
+    const licencias = await modules.getAllLicencesFromDb()
+    const licence_id = req.body.licence
+    const licencia = licencias.find(lic => lic.licence_id == licence_id)
+    const rutaImgLicencia = licencia.licence_image.split('/')[2]
+    req.body.img = '/img/' + rutaImgLicencia + '/' + req.body.img
     console.log(req.body)
+    await modules.udpateItemById(req.body)
+    res.redirect('/shop')
 })
 
 const deleteById = (async (req, res) => {

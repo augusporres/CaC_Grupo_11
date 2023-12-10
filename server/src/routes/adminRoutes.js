@@ -9,9 +9,11 @@ router.route('/create')
     .get(adminController.getCreate)
     .post(adminController.postCreate)
 
+
 router.route('/edit/:id')
     .get(adminController.getAdminById)
-    .put(adminController.updateById)
+    .post(adminController.updateById)
+    
 
 router.route('/edit/delete/:id')
     .delete(adminController.deleteById)
