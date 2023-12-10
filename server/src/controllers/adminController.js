@@ -25,7 +25,6 @@ const getCreate = (async (req, res) => {
 })
 
 const postCreate = (async (req, res) => {
-    const productos = await modules.getAllProductsFromDb()
     const licencias = await modules.getAllLicencesFromDb()
     const licence_id = req.body.licence
     const licencia = licencias.find(lic => lic.licence_id == licence_id)
@@ -48,8 +47,7 @@ const getAdminById = (async (req, res) => {
 })
 
 const updateById = ((req, res) => {
-    const id = req.params.id
-    return res.status(200).json(req.body)
+    console.log(req.body)
 })
 
 const deleteById = (async (req, res) => {
@@ -60,6 +58,7 @@ const deleteById = (async (req, res) => {
         productos : datos
     })
 })
+// category=1&licence=1&product_name=&description=Figura+coleccionable+de+Luke+Skylwalker+%26+Grogu+-+The+Mandalorian+Saga.&sku=asdfa&price=1500&stock=10&discount=1&due=6&img=
 
 module.exports = {
     admin,

@@ -11,7 +11,6 @@ const postLogin = (async (req, res) => {
         session = req.session
         session.userId = authUser.email
         var role = await modules.getRolesByUserId(authUser.user_id)
-        console.log(role)
         if(role.role_id != 1)
             res.redirect('/home')
         else
@@ -27,7 +26,6 @@ const getRegister = ((req, res) => {
 
 const postRegister = (async (req, res) => {
     req.body.password = req.body.password[0]
-    console.log(req.body)
     const authUser = await modules.getUserByMailFromDb(req.body)
     if(authUser !== undefined)
     {
