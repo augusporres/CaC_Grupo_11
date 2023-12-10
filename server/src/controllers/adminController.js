@@ -27,9 +27,10 @@ const postCreate = (async (req, res) => {
     return res.status(200).json(req.body)
 })
 
-const getAdminById = ((req, res) => {
+const getAdminById = (async (req, res) => {
     const id = req.params.id
-    return res.status(200).json({ message: `GET Edit Admin by id: ${id}`})
+    await modules.getShopItemById(id)
+    res.render('edit.ejs')
 })
 
 const updateById = ((req, res) => {
