@@ -1,9 +1,12 @@
+var modules = require('../models/model')
+
 const getLogin = ((req, res) => {
     res.render('login.ejs')
 })
 
 const postLogin = ((req, res) => {
-    res.status(200).json({message: 'POST Login succeed!'})
+    const authUser = modules.getUserByMailFromDb(req.body)
+    res.status(200).json(authUser)
 })
 
 const getRegister = ((req, res) => {
