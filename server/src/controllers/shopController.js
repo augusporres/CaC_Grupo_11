@@ -5,13 +5,14 @@ var modules = require('../models/model')
 // @access Private
 const getAllShops = (async (req, res) => {
     // funcion para traer datos de la base
-    const datos =  await modules.getAllShopsFromDb()
+    const datos =  await modules.getAllProductsFromDb()
     res.render('shop.ejs', {productos: datos})
 })
 
 // - GET -> /shop/item/:id
 const getShopItemById = (async (req, res) => {
     const id = req.params.id
+    console.log(`ID: ->`,id)
     var dato = await modules.getShopItemById(id)
     res.render('item.ejs', {producto: dato})
 })
