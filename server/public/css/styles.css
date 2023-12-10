@@ -1094,9 +1094,9 @@ form {
     line-height: normal;
 ;
   }
-  .form-title input{
+ /* .form-title input{
 
-  }
+  }*/
   .form-subtitle label{
     margin-bottom: 5px;
     font-size: 16px;
