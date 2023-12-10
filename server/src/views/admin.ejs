@@ -36,15 +36,17 @@
                 <thead>
 
                    <tr>
-                       <th colspan="3" class="flex_item1"><h1 class="title_list">LISTADO PRODUCTOS</h1></th>
-                       <th colspan="2" class="flex_item2"><h3 class="agregar">AGREGAR</h3></th>
+                        <th colspan="3" class="flex_item1"><h1 class="title_list">LISTADO PRODUCTOS</h1></th>
+                            <th colspan="2" class="flex_item2"><h3 class="agregar">AGREGAR</h3></th>
 
-                   <!-- Botón para agregar nuevos productos -->
-                        <th colspan="">
-                            <button class="btn_add btn" id="btn_agregar"> 
-                                <img src="/img/icons/mdi_plus-box.svg" alt="">
-                            </button>
-                        </th>
+                            <!-- Botón para agregar nuevos productos -->
+                            <th colspan="">
+                                <button class="btn_add btn" id="btn_agregar">
+                                    <a href="/admin/create">
+                                    <img src="/img/icons/mdi_plus-box.svg" alt="">
+                                </a>
+                                </button>
+                            </th>
                    </tr>
                
 
@@ -59,6 +61,15 @@
                    </tr>
 
                </thead>
+                        <!--CARTEL DE POPUP-->
+               <div class="overlay" id="overlay">
+                    <div class="popup">
+                        <p>¿Estás seguro de que quieres borrar este producto?</p>
+                        <button id="confirmarBorrar">Sí</button>
+                        <button id="cancelarBorrar">No</button>
+                    </div>
+                </div>
+
 
                <tbody class="tbody">
                 <% productos.forEach(function(product) { %>
@@ -69,12 +80,17 @@
                                <td class="genero"><%= product.licence_name %></td>
                                <td class="edit_button">
                                    <button type="button" class="btn">
-                                    <img src="/img/icons/edit_pencil.svg" alt="">
+                                    <a href="/admin/edit/<%= product.product_id %>">
+                                        <img src="/img/icons/edit_pencil.svg" alt="">
+                                    </a>
                                     </button>
                                </td>
                                <td class="delete_icon">
-                                       <button type="button" class="btn"><img src="/img/icons/delete_trash.svg" alt=""></button>
-                               </td>
+                                    <button data-id="<%= product.product_id %>" type="button"
+                                        class="btn botonBorrar">
+                                        <img src="/img/icons/delete_trash.svg" alt="">
+                                    </button>
+                                </td>
                            </tr>
                 <% }); %>
                 
@@ -88,9 +104,46 @@
 </main>
     <!--FIN MAIN-->
     <footer class="footer">
-        <%- include('./footer.ejs'); %>
+        <%- include('./footer_auth.ejs'); %>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+        const botonesBorrar = document.getElementsByClassName('botonBorrar');
+        const overlay = document.getElementById('overlay');
+        const confirmarBorrarBtn = document.getElementById('confirmarBorrar');
+        const cancelarBorrarBtn = document.getElementById('cancelarBorrar');
+
+
+        Array.from(botonesBorrar).forEach(function (boton) {
+        boton.addEventListener('click', function () {
+            let id = this.getAttribute('data-id');
+            overlay.style.display = 'flex';
+
+            confirmarBorrarBtn.addEventListener('click', function () {
+                fetch('/admin/edit/delete/' + id, { method: 'DELETE' })
+                    .then(() => {
+                        window.location.reload();
+                    })
+                    .catch(error => console.error('Error:', error));
+
+                
+                overlay.style.display = 'none';
+            });
+
+            //Si se hace click en NO
+            cancelarBorrarBtn.addEventListener('click', function () {
+                overlay.style.display = 'none';
+            });
+        });
+        });
+            // si se hace click en cualq lado de la pagina
+        overlay.addEventListener('click', function (event) {
+        if (event.target === overlay) {
+            overlay.style.display = 'none';
+        }
+        });
+    </script>
 </body>
 
 </html>

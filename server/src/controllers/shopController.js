@@ -5,15 +5,21 @@ var modules = require('../models/model')
 // @access Private
 const getAllShops = (async (req, res) => {
     // funcion para traer datos de la base
-    const datos =  await modules.getAllShopsFromDb()
+    const datos =  await modules.getAllProductsFromDb()
     res.render('shop.ejs', {productos: datos})
 })
 
 // - GET -> /shop/item/:id
 const getShopItemById = (async (req, res) => {
     const id = req.params.id
-    var dato = await modules.getShopItemById(id)
-    res.render('item.ejs', {producto: dato})
+    console.log(`ID: ->`,id)
+    if(isNaN(id)) {
+        console.log('is not a number')
+    }
+    else {
+        var dato = await modules.getShopItemById(id)
+        res.render('item.ejs', {producto: dato})
+    }
 })
 // - POST -> /shop/item/:id/add
 const addShop = ((req, res) => {
