@@ -1012,7 +1012,129 @@ footer {
     background-color: var(--primary-900);
 }
 
+/*Aside*/
+.row{
+    display: flex;
+    gap: var(--spacing-24);
+}
 
+aside{
+    width: 243.04px;
+    height: 493.93px;
+    top: 212px;
+    left: 110px;
+    border-radius: 6px;
+    background-color: white;
+    padding: var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);  
+    
+}
+/*SECTION*/
+
+section{
+    display: flex;
+    width: 960.03px;
+    height: 1608px;
+    top: 212px;
+    left: 368px;
+    background: white;
+}
+
+/*FORM*/
+form {
+    width: 243.04px;
+    height: 493.93px;
+    top: 212px;
+    left: 110px;
+    border-radius: 6px;
+}
+.form-title label,
+.form-title input {
+  display: block;
+  
+}
+.form-title label{
+
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Inter;
+    color: #111;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+;
+  }
+  .form-title input{
+
+  }
+  .form-subtitle label{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+/*PAGINATION*/
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+  }
+  
+  .pagination a {
+    display: flex; 
+    color:black;
+    cursor: pointer;    
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 4px;
+    border: 1px solid #DFE3E8;
+    margin: 0 5px;
+  }
+  
+  
+  .pagination a.active {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    color: red;
+    border: 1px solid #FF3333;
+  }
+
+  .pagination a:hover:not(.active) {       
+    border: solid 1px black;
+  }
+  
+    
+  .pagination a.prev,
+  .pagination a.next {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagination a.prev {
+    margin-right: 10px;
+  }
+  
+  .pagination a.next {
+    margin-left: 10px;
+  }
+  
 
 /*SLIDER*/
 
