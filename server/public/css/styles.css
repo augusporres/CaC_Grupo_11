@@ -178,15 +178,17 @@ header {
     font-size: 16px;
     /* =16px */
     max-width: 90%;
-    height: 54vh;
+    height: vh;
     min-height: 500px;
     margin: 0 22em;
     padding: 20px;
     font-family: 'Inter', sans-serif;
 }
-
+#create .edit-form {
+    width: 50vw;
+}
 #create .add-item {
-    width: 75%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -217,6 +219,7 @@ header {
 
 #create label {
     font-weight: bold;
+    margin-right: 10px;
 }
 
 #create .choice div {
@@ -224,11 +227,12 @@ header {
 }
 
 #create .nombre-prod {
+    display: flex;
     padding-bottom: 3%;
 }
 
 #create .nombre-prod input {
-    min-width: 23%;
+    min-width: 30%;
 }
 
 #create .red-underline {
@@ -236,12 +240,14 @@ header {
     border-bottom: 3px solid #FF3333;
     text-align: center;
 }
-
+#create .textarea-descripcion {
+    width: 85%;
+}
 #create .descripcion_prod {
     display: flex;
     max-width: 97%;
     gap: 0.6em;
-    width: 60%;
+    width: 100%;
 }
 
 #create .descripcion_prod div {
@@ -269,19 +275,23 @@ header {
 }
 
 #create .descuento {
-    width: 18%;
+    width: 30%;
+    display: flex;
+}
+#create .carga_archivo {
+    display: flex;
 }
 
 #create .cuotas {
-    width: 70%;
+    width: 50%;
 }
 
 #create .descuento input {
-    width: 27%;
+    width: 50px;
 }
 
 #create .cuotas select {
-    width: 35%;
+    width: 65%;
 }
 
 #create .add-button button {
@@ -292,6 +302,9 @@ header {
     background-color: #FF3333;
     color: white;
     border-style: none;
+}
+#create .add-button:hover {
+    cursor: pointer;
 }
 
 #create .imgs {
@@ -459,15 +472,16 @@ header {
   #item .collection-text,
   .collection-price {
     margin-top: 10px;
-    
   }
   
   #item .collection-title {
     margin-top: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
   }
   
   #item .collection-price {
-     font-size: 23px;
+     font-size: 21px;
   }
   
   #item .counter-and-cart,
@@ -490,15 +504,16 @@ header {
   #item #agregar {
     background-color: #ff4500;
     border-style: solid;
-    padding: 5px 10px;
+    padding: 8px 8px;
     font-size: 14px;
     cursor: pointer;
+    border: none;
     transition: background-color 0.3s ease;
-    
+    color: #B9B9B9;
   }
   
   #item #agregar:hover {
-    background-color: #a09999;
+    background-color: #515355;
   }
   
   #item .enlace-medios-de-pago a{
@@ -634,13 +649,16 @@ header {
     padding: 7px; 
     width: 5px; 
     margin-left: 10px;
-    margin-top: 2px;
+    margin-top: 11px;
   }
 
   #item h2 {
     font-size: 25px;
     margin-left: 15px;
   }
+
+
+ 
 
 
 /* --- EDIT --- */
@@ -1684,4 +1702,32 @@ letter-spacing: 0.96px;
     border: 0;
    background-color: #FFF;
    width: 45px;
+}
+
+#admin .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(117, 116, 116, 0.5);
+    align-items: center;
+    justify-content: center;
+    }
+
+                    
+#admin .popup{
+    background: #faf7f7;
+   padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+#admin .popup button {
+    padding: 10px;
+    margin: 5px;
+     cursor: pointer;
 }
