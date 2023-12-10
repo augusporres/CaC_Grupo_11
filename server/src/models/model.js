@@ -67,9 +67,7 @@ const getUserByMailFromDb = async(req) => {
 }
 const getRolesByUserId = async(req) => {
     try {
-        console.log(`USER IID ->`, req)
         var role = await pool.query(`SELECT * FROM user_has_role JOIN role ON user_has_role.role_role_id = role.role_id WHERE user_user_id = '${req}' `)
-        console.log(role[0][0])
         return role[0][0]
         
     } catch (error) {
@@ -82,9 +80,17 @@ const createUser = async(body) => {
     try {
         await pool.query(`INSERT INTO user (name, lastname, email, password, create_time) VALUES('${body.name}', '${body.lastname}', '${body.usermail}', '${body.password}', current_timestamp())`)
         var userId = await pool.query(`SELECT user_id FROM user WHERE email = '${body.usermail}'`)
-        console.log(userId[0][0].user_id)
         await pool.query(`INSERT INTO user_has_role (user_user_id, role_role_id) VALUES(${userId[0][0].user_id}, 2)`)
         return userId[0][0].user_id
+    } catch (error) {
+        console.error(error)
+        throw error
+    }
+}
+
+const udpateItemById = async(body) => {
+    try {
+        await pool.query(`UPDATE product SET product_name = '${ body.product_name }', category_id= ${ body.category }, licence_id = ${ body.licence }, product_description= '${ body.description }', price= ${ body.price }, stock= ${ body.stock }, discount= ${ body.discount }, sku= '${ body.sku }', dues= ${ body.due }, image_front= '${ body.img }', image_back= '${ body.img }' WHERE product_id = ${ body.product_id }`)
     } catch (error) {
         console.error(error)
         throw error
@@ -99,5 +105,6 @@ module.exports = {
     createProduct,
     getUserByMailFromDb,
     getRolesByUserId,
-    createUser
+    createUser,
+    udpateItemById
 }

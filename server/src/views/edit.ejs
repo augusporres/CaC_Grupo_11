@@ -13,8 +13,8 @@
     <section>
         <h2>EDITAR ITEM</h2>
         <form
-            action="http://localhost:3000/edit/<%= producto.product_id %>"
-            method="PUT"
+            action="/admin/edit/<%= producto.product_id %>"
+            method="POST"
         >
             <div class="choice">
                 <div>
@@ -50,7 +50,7 @@
             <div class="descripcion_prod">
                 <div>
                     <label for="skuProd" class="texto_desc">SKU:</label>
-                    <input id="skuProd" class="red-underline" name="sku" type="number" placeholder="<%= producto.sku %>">
+                    <input id="skuProd" class="red-underline" name="sku" type="text" placeholder="<%= producto.sku %>">
                 </div>
                 <div>
                     <label for="precioProd" class="texto_desc">Precio:</label>

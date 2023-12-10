@@ -12,7 +12,6 @@ const getAllShops = (async (req, res) => {
 // - GET -> /shop/item/:id
 const getShopItemById = (async (req, res) => {
     const id = req.params.id
-    console.log(`ID: ->`,id)
     if(isNaN(id)) {
         console.log('is not a number')
     }
