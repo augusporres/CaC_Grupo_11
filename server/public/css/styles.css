@@ -1037,12 +1037,12 @@ footer {
 }
 
 /*Aside*/
-.row{
+#shop .row{
     display: flex;
     gap: var(--spacing-24);
 }
 
-aside{
+#shop aside{
     width: 243.04px;
     height: 493.93px;
     top: 212px;
@@ -1057,7 +1057,7 @@ aside{
 }
 /*SECTION*/
 
-section{
+#shop section{
     display: flex;
     width: 960.03px;
     height: 1608px;
@@ -1067,19 +1067,21 @@ section{
 }
 
 /*FORM*/
-form {
+#shop form {
     width: 243.04px;
     height: 493.93px;
     top: 212px;
     left: 110px;
     border-radius: 6px;
 }
-.form-title label,
+
+#shop .form-title label,
 .form-title input {
   display: block;
   
 }
-.form-title label{
+
+#shop .form-title label{
 
     display: block;
     margin-bottom: 10px;
@@ -1092,12 +1094,11 @@ form {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-;
-  }
- /* .form-title input{
 
-  }*/
-  .form-subtitle label{
+  }
+
+
+#shop .form-subtitle label{
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: normal;
@@ -1105,7 +1106,7 @@ form {
 
 /*PAGINATION*/
 
-.pagination {
+#shop .pagination {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1118,10 +1119,12 @@ form {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
+    margin-bottom: 90px;
+    margin-left: 250px;
 
   }
   
-  .pagination a {
+#shop .pagination a {
     display: flex; 
     color:black;
     cursor: pointer;    
@@ -1134,28 +1137,28 @@ form {
   }
   
   
-  .pagination a.active {
+#shop .pagination a.active {
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
     color: red;
     border: 1px solid #FF3333;
   }
 
-  .pagination a:hover:not(.active) {       
+#shop .pagination a:hover:not(.active) {       
     border: solid 1px black;
   }
   
     
-  .pagination a.prev,
+#shop .pagination a.prev,
   .pagination a.next {
     display: flex;
     align-items: center;
   }
   
-  .pagination a.prev {
+#shop .pagination a.prev {
     margin-right: 10px;
   }
   
-  .pagination a.next {
+#shop .pagination a.next {
     margin-left: 10px;
   }
   
@@ -1173,6 +1176,7 @@ form {
     display: flex;
     gap:var(--spacing-24);
     flex-wrap: wrap;
+    margin-top: 0px;
 }
 #shop .slider__item{
     width: 30%;
