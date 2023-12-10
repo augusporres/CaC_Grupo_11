@@ -1,5 +1,7 @@
 const express = require('express')
 require('dotenv').config()
+const cookieParser = require("cookie-parser");
+const sessions = require('express-session');
 
 var pool = require('./src/config/database')
 const app = express()
@@ -15,6 +17,15 @@ app.set('views', __dirname + '/src/views');
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
+const oneDay = 1000 * 60 * 60 * 24;
+app.use(sessions({
+    secret: process.env.SESSION_SECRET,
+    saveUninitialized:false,
+    cookie: { maxAge: oneDay },
+    resave: false
+}));
+app.use(cookieParser());
+var session
 app.use('/', express.static(path.join(__dirname, '/public')))
 
 

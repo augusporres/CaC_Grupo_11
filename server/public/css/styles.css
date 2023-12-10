@@ -923,9 +923,15 @@ header {
 }
 
 #register input[type="submit"]:hover {
-    background-color: #e61430;
+    background-color: #9c9293;
     color: black;
     font-weight: bold;
+}
+
+#register .form-check-label,
+ .form-check-input {
+    vertical-align: middle;
+    display: inline-block;
 }
 
 /************ FIN REGISTER **************/

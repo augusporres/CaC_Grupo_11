@@ -2,10 +2,15 @@
 var modules = require('../models/model')
 
 const admin = (async (req, res) => {
-    const datos =  await modules.getAllProductsFromDb()
-    res.render('admin.ejs', {
-        productos : datos
-    })
+    session = req.session
+    if(session.userId){
+        const datos =  await modules.getAllProductsFromDb()
+        res.render('admin.ejs', {
+            productos : datos
+        })
+    } else {
+        res.redirect('/auth/login')
+    }
 })
 
 const getCreate = (async (req, res) => {
@@ -21,11 +26,9 @@ const getCreate = (async (req, res) => {
 
 const postCreate = (async (req, res) => {
     const productos = await modules.getAllProductsFromDb()
-    const maxId = productos.reduce((max, obj) => Math.max(max, obj.product_id), -Infinity);
-    req.body.product_id = maxId + 1
     req.body.img = '/img/' + req.body.img
     const response = await modules.createProduct(req.body)
-    return res.status(200).json(req.body)
+    res.redirect('/admin')
 })
 
 const getAdminById = (async (req, res) => {
