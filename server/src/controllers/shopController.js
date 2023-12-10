@@ -13,8 +13,13 @@ const getAllShops = (async (req, res) => {
 const getShopItemById = (async (req, res) => {
     const id = req.params.id
     console.log(`ID: ->`,id)
-    var dato = await modules.getShopItemById(id)
-    res.render('item.ejs', {producto: dato})
+    if(isNaN(id)) {
+        console.log('is not a number')
+    }
+    else {
+        var dato = await modules.getShopItemById(id)
+        res.render('item.ejs', {producto: dato})
+    }
 })
 // - POST -> /shop/item/:id/add
 const addShop = ((req, res) => {

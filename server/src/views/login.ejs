@@ -14,19 +14,22 @@
     <section class="main-content">
         <div class="login">
             <h2>Ingresar a mi cuenta</h2>
-            <form>
+            <form
+                action="/auth/login"
+                method="POST"
+            >
                 <div class="credentials">
                     <div class="email-field">
                         <div class="label">
                             <label for="email">Email:</label>
                         </div>
-                        <input id="email" type="email" value="" placeholder="johndoe@correo.com" class="red-underline">
+                        <input id="email" type="email" name="usermail" placeholder="johndoe@correo.com" class="red-underline">
                     </div>
                     <div class="password-field">
                         <div class="label">
                             <label for="password">Contraseña:</label>
                         </div>
-                        <input id="password" type="password" value="" class="red-underline">
+                        <input id="password" type="password" name="password" class="red-underline">
                     </div>      
                 </div>
                 

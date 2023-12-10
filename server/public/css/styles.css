@@ -1731,3 +1731,106 @@ letter-spacing: 0.96px;
     margin: 5px;
      cursor: pointer;
 }
+
+#edit section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+#edit section h2 {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+#edit .choice {
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#edit .choice div {
+    margin-right: 5%;
+}
+
+#edit .nombre_prod {
+    padding-bottom: 3%;
+}
+
+#edit .descripcion_prod {
+    display: flex;
+    gap: 3%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+#edit .descuento {
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#edit #textarea {
+    font-family: 'Raleway', sans-serif;
+    padding: 1%;
+}
+
+#skuProd,
+#precioProd,
+#stock,
+#descProd {
+    font-size: 10px;
+}
+
+#edit .imgs {
+    display: flex;
+    padding: 3%;
+    gap: 5%;
+}
+
+#edit .imgs img {
+    width: 100px;
+}
+
+#edit .texto_desc {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 5px;
+}
+
+#edit .sub-tt {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+#edit .red-underline {
+    border-style: none;
+    border-bottom: 2px solid #FF3333;
+    text-align: left;
+}
+
+#edit .red-underline-fina {
+    border-style: none;
+    border-bottom: 1px solid #FF3333;
+    text-align: center;
+}
+
+#edit .modificar-button {
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: #FF3333;
+    color: white;
+    border-style: none;
+    padding: 9px;
+    margin-left: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
