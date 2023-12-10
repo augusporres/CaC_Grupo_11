@@ -2,7 +2,7 @@ const pool = require('../config/database')
 
 const getAllProductsFromDb = async () => {
     try {
-        const datos = await pool.query("SELECT * FROM product JOIN licence ON product.licence_id = licence.licence_id limit 9")
+        const datos = await pool.query("SELECT * FROM product JOIN licence ON product.licence_id = licence.licence_id")
         return datos[0]
     } catch (error) {
         console.error(error)
@@ -46,10 +46,20 @@ const getAllLicencesFromDb = async () => {
         throw error
     }
 }
+
+const createProduct = async(body) => {
+    try {
+        await pool.query(`INSERT INTO product VALUES(${body.product_id},'${body.product_name}', '${body.description}', ${body.price}, ${body.stock}, ${body.discount}, '${body.sku}', ${body.due}, '${body.img}', '${body.img}', current_timestamp(), ${body.licence},${body.category})`)
+    } catch (error) {
+        console.error(error)
+        throw error
+    }
+}
 module.exports = {
     getAllProductsFromDb, 
     getShopItemById, 
     deleteShopItemById,
     getAllCategoriesFromDb,
-    getAllLicencesFromDb
+    getAllLicencesFromDb,
+    createProduct
 }

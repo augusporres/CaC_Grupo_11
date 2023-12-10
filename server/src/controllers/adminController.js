@@ -19,7 +19,11 @@ const getCreate = (async (req, res) => {
     })
 })
 
-const postCreate = ((req, res) => {
+const postCreate = (async (req, res) => {
+    const productos = await modules.getAllProductsFromDb()
+    const maxId = productos.reduce((max, obj) => Math.max(max, obj.product_id), -Infinity);
+    req.body.product_id = maxId + 1
+    const response = await modules.createProduct(req.body)
     return res.status(200).json(req.body)
 })
 

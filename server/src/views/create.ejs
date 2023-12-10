@@ -24,7 +24,7 @@
                         <label for="selectCategory">
                             <span>Categoría:</span>
                         </label>
-                        <select id="selectCategory" name="category">
+                        <select id="selectCategory" name="category", type="number">
                             <% categorias.forEach(function(categoria) { %>
                                 <option value="<%= categoria.category_id %>"><%= categoria.category_name %></option>
                             <% }); %>
@@ -35,7 +35,7 @@
                         <label for="selectLicencia">
                             <span>Licencia:</span>
                         </label>
-                        <select id="selectLicencia" name="license">
+                        <select id="selectLicencia" name="licence", type="number">
                             <% licencias.forEach(function(licencia) { %>
                                 <option value="<%= licencia.licence_id %>"><%= licencia.licence_name %></option>
                             <% }); %>
@@ -57,24 +57,24 @@
                     </div>
                     <div class="precio">
                         <label for="precioProd">Precio:</label>
-                        <input id="precioProd" type="text"  name="price" placeholder="1700"class="red-underline">
+                        <input id="precioProd" type="number"  name="price" placeholder="1700"class="red-underline">
                     </div>
                     <div class="stock">
                         <label for="stock">Stock:</label>
-                        <input id="stock" type="text"  name="stock" placeholder="10" class="red-underline">
+                        <input id="stock" type="number"  name="stock" placeholder="10" class="red-underline">
                     </div>
                 </div>
                 
                 <div class="pago">
                     <div class="descuento">
                         <label for="descProd">Descuento:</label>
-                        <input id="descProd" type="text" name="discount" placeholder="0%" class="red-underline">
+                        <input id="descProd" type="number" name="discount" placeholder="0%" class="red-underline">
                     </div>
                     <div class="cuotas">
                         <label for="cuotasProd">
                             <span>Cuotas:</span>
                         </label>
-                        <select id="cuotasProd" name="due">
+                        <select id="cuotasProd" name="due", type="number">
                             <option value="1">1 Cuota sin interés</option>
                             <option value="3">3 Cuotas sin interés</option>
                             <option value="6">6 Cuotas sin interés</option>
