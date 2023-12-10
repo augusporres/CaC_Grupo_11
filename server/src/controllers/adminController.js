@@ -29,7 +29,19 @@ const postCreate = (async (req, res) => {
     const licence_id = req.body.licence
     const licencia = licencias.find(lic => lic.licence_id == licence_id)
     const rutaImgLicencia = licencia.licence_image.split('/')[2]
-    req.body.img = '/img/' + rutaImgLicencia + '/' + req.body.img
+
+    const imagenes = []
+    
+    if (typeof req.body.img === 'string') {
+        imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img)
+        imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img)
+    } else {
+        imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img[0])
+        imagenes.push('/img/' + rutaImgLicencia + '/' + req.body.img[1])
+    }
+
+    
+    req.body.img = imagenes
     const response = await modules.createProduct(req.body)
     res.redirect('/admin')
 })
