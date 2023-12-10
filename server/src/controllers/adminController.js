@@ -20,8 +20,7 @@ const getCreate = (async (req, res) => {
 })
 
 const postCreate = ((req, res) => {
-    console.log(req.body)
-    return res.status(200).json({ message: `POST Create Admin`})
+    return res.status(200).json(req.body)
 })
 
 const getAdminById = ((req, res) => {
