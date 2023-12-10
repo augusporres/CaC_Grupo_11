@@ -10,8 +10,12 @@ const postLogin = (async (req, res) => {
     {
         session = req.session
         session.userId = authUser.email
-        console.log(req.session)
-        res.redirect('/admin')
+        var role = await modules.getRolesByUserId(authUser.user_id)
+        console.log(role)
+        if(role.role_id != 1)
+            res.redirect('/home')
+        else
+            res.redirect('/admin')
     }
     else
         res.status(400).json({message: 'Usuario/Contraseña incorrecto'})
@@ -21,8 +25,22 @@ const getRegister = ((req, res) => {
     res.render('register.ejs')
 })
 
-const postRegister = ((req, res) => {
-    res.status(200).json({message: 'POST Register succeed!'})
+const postRegister = (async (req, res) => {
+    req.body.password = req.body.password[0]
+    console.log(req.body)
+    const authUser = await modules.getUserByMailFromDb(req.body)
+    if(authUser !== undefined)
+    {
+        console.error('Ya existe el usuario')
+    }
+    else
+    {
+       var userId = await modules.createUser(req.body)
+       if(userId !== undefined)
+       {
+            res.redirect('/auth/login')
+       }
+    }
 })
 
 const logout = ((req, res) => {

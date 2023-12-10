@@ -65,6 +65,31 @@ const getUserByMailFromDb = async(req) => {
         throw error    
     }
 }
+const getRolesByUserId = async(req) => {
+    try {
+        console.log(`USER IID ->`, req)
+        var role = await pool.query(`SELECT * FROM user_has_role JOIN role ON user_has_role.role_role_id = role.role_id WHERE user_user_id = '${req}' `)
+        console.log(role[0][0])
+        return role[0][0]
+        
+    } catch (error) {
+        console.error(error)
+        throw error    
+    }
+}
+
+const createUser = async(body) => {
+    try {
+        await pool.query(`INSERT INTO user (name, lastname, email, password, create_time) VALUES('${body.name}', '${body.lastname}', '${body.usermail}', '${body.password}', current_timestamp())`)
+        var userId = await pool.query(`SELECT user_id FROM user WHERE email = '${body.usermail}'`)
+        console.log(userId[0][0].user_id)
+        await pool.query(`INSERT INTO user_has_role (user_user_id, role_role_id) VALUES(${userId[0][0].user_id}, 2)`)
+        return userId[0][0].user_id
+    } catch (error) {
+        console.error(error)
+        throw error
+    }
+}
 module.exports = {
     getAllProductsFromDb, 
     getShopItemById, 
@@ -72,5 +97,7 @@ module.exports = {
     getAllCategoriesFromDb,
     getAllLicencesFromDb,
     createProduct,
-    getUserByMailFromDb
+    getUserByMailFromDb,
+    getRolesByUserId,
+    createUser
 }
