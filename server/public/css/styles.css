@@ -1050,6 +1050,7 @@ footer {
     left: 110px;
     border-radius: 6px;
 }
+
 #shop .form-title label,
 .form-title input {
   display: block;
@@ -1069,7 +1070,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-;
+
   }
 
 
@@ -1094,6 +1095,8 @@ footer {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
+    margin-bottom: 90px;
+    margin-left: 250px;
 
   }
   
@@ -1149,6 +1152,7 @@ footer {
     display: flex;
     gap:var(--spacing-24);
     flex-wrap: wrap;
+    margin-top: 0px;
 }
 #shop .slider__item{
     width: 30%;
