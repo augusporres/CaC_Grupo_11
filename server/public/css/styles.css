@@ -872,12 +872,43 @@ header {
 
 /*********************** REGISTER *************/
 
-#register body {
-    font-family: Arial, sans-serif;
+#register .main-content {
     font-size: 16px;
-    background-color: #f2f2f2;
-    margin: 5;
-    padding: 5;
+    /* =16px */
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+#register .red-underline {
+    border-style: none;
+    border-bottom: 3px solid #FF3333;
+    text-align: center;
+}
+#register .subtitle {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+#register .credentials {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 50%;
+    margin: auto;
+}
+
+#register .credentials div {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+#register .credentials div input{
+    width: 50%;
+}
+
+#register .credentials .label {
+    width: 10em;
+    display: inline-block;
 }
 
 #register h2{
@@ -889,30 +920,22 @@ header {
     margin: 20px;
     padding: 20px;
     background-color:white;
-    border-radius: 5px ;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-#register form {
-    text-align: left;
 }
 
 #register label, input {
     display: block;
     margin-bottom: 10px;
 }
-
-#register input[type="text"],
-#register input[type="email"],
-#register input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#register .register-div {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
 #register input[type="submit"] {
-    background-color: rgb(160, 65, 65);
+    background-color: var(--primary-solid);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -930,7 +953,6 @@ header {
 
 #register .form-check-label,
  .form-check-input {
-    vertical-align: middle;
     display: inline-block;
 }
 

@@ -9,50 +9,55 @@
         <%- include('./header_auth.ejs'); %>
     </header>
     <!-- FIN DE HEADER -->
-    <section>
+    <section class="main-content">
         <div id="main" class="container_register">
             <form action="/auth/register" method="POST">
-                <h2>CREA TU CUENTA</h2><br>
-                <h3>Completa el formulario para ser parte de Funkos</h3>
+                <h2>CREA TU CUENTA</h2>
+                <p class="subtitle">Completa el formulario para ser parte del mundo de los Funkos</p>
         
-                <div class="row">
-                    <label for="nombre" class="col-lg-2 col-form-label form-control-lg" >Nombre:</label>
-                    <div class="col-lg-10"> 
-                        <input type="text" id="nombre" class="form-control" name="name" required><br>
+                <div class="credentials">
+                    <div>
+                        <label for="nombre" class="label" >Nombre:</label>
+                    
+                        <input type="text" id="nombre" class="red-underline" name="name" required><br>
+                    </div>
+                    
+                    <div>
+                        <label for="apellido" class="label">Apellido:</label>
+                    
+                        <input type="text" id="apellido" class="red-underline" name="lastname" required><br>
                     </div>
         
-                    <label for="apellido" class="col-lg-2 col-form-label form-control-lg">Apellido:</label>
-                    <div class="col-lg-10">
-                        <input type="text" id="apellido" class="form-control" name="lastname" required><br>
-                    </div>
-        
-                    <label for="correo" class="col-lg-2 col-form-label form-control-lg">Correo Electrónico:</label>
-                    <div class="col-lg-10">
-                        <input type="email" id="correo"  class="form-control" name="usermail" required><br>
+                    <div>
+                        <label for="correo" class="label">Correo Electrónico:</label>
+                    
+                        <input type="email" id="correo"  class="red-underline" name="usermail" required><br>
                     </div>
         
         
-                    <label for="clave1" class="col-lg-2 col-form-label form-control-lg">Contraseña:</label>
-                    <div class="col-lg-10">
-                        <input type="password" id="clave1" class="form-control" name="password" required><br><br>
+                    <div>
+                        <label for="clave1" class="label">Contraseña:</label>
+                    
+                        <input type="password" id="clave1" class="red-underline" name="password" required><br><br>
                     </div>
         
-                    <label for="clave2" class="col-lg-2 col-form-label form-control-lg">Repita contraseña:</label>
-                    <div class="col-lg-10">
-                        <input type="password" id="clave2" name="password" required><br><br>
+                    <div>
+                        <label for="clave2" class="label">Repita contraseña:</label>
+                    
+                        <input type="password" id="clave2" name="password" class="red-underline" required><br><br>
                     </div>
                 </div>
         
-                <div class="row row-cols-sm-auto align-items-center">
-                    <div class="col-12">
+                <div class="register-div">
+                    
                         <input class="btn" type="submit" value="Registrarse">
-                    </div>
-                    <div class="col-12">
+                    
+                    
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
                             <label class="form-check-label" for="terminos">Acepto <a href="reg_terminos.html">Terminos y condiciones</a></label>
                         </div>
-                    </div>
+                    
         
                 </div>
             </form>
