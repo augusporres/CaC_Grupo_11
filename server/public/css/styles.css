@@ -1076,52 +1076,44 @@ header {
 
 /*FORM*/
 #shop form {
-    
-    width: 243.04px;
-    height: 493.93px;
-    top: 212px;
-    left: 110px;
-    border-radius: 6px;
+    margin-top: var(--spacing-36); /* Add margin at the top for spacing */
+    padding: var(--spacing-24); /* Add padding to the form for spacing and aesthetics */
+    background-color: #ffffff; /* Set a background color */
+    border: 2px solid #ddd; /* Add a border with a color of your choice */
+    border-radius: 10px; /* Add border-radius for rounded corners */
 }
-/*
-#shop .form-title label,
-#shop .form-title input {
-  display: block;
-  
-}*/
 
-#shop .form-title label{
-    color: #111;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
+#shop form:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+}
 
-  #shop .form-title input{
-    width: 243.034px;
-    height: 44.285px;
-    flex-shrink: 0;
-    border-radius: 6px;
-    border: 2px solid #30343F;
-  }
+#shop form input[type="submit"] {
+    background-color: #4CAF50; /* Set a background color for the submit button */
+    color: #fff; /* Set text color for the submit button */
+    padding: 10px 20px; /* Add padding to the submit button */
+    border: none; /* Remove border from the submit button */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
 
+#shop form input[type="submit"]:hover {
+    background-color: #45a049; /* Darken the background color on hover */
+}
 
 /*BUSCAR*/
-#shop .form-item {
-    width: 243.034px;
-    height: 86.285px;
-    flex-shrink: 0;
-    
+#shop .form-item input {
+    width: 100%; /* Make the input take the full width of the container */
+    height: 40px; /* Adjust the height to your preference */
+    padding: 10px; /* Add padding for spacing within the input field */
+    border: 2px solid #ddd; /* Add a border with a color of your choice */
+    border-radius: 6px; /* Add border-radius for rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease-in-out; /* Add a smooth transition effect */
 }
-#shop .form-item label{
-    color: #111;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+
+#shop .form-item input:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove the default focus outline */
 }
 #shop .form-item description{
     color: #B9B9B9;
@@ -1185,56 +1177,121 @@ header {
 
 /*FILTRO*/
 
-#shop .form-filtro{
+#shop .form-title1,
+#shop .form-title2,
+#shop .form-title3,
+#shop .form-title4 {
+    margin-bottom: var(--spacing-24); /* Increased margin to create more space between form-title sections */
+}
+
+#shop .form-title1 label,
+#shop .form-title2 label,
+#shop .form-title3 label,
+#shop .form-title4 label {
+    color: #333; /* Adjust the color to your preference */
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 1.6em; /* Adjust the font size */
+    margin-bottom: var(--spacing-8); /* Adjust the margin for the label */
+}
+
+
+#shop .form-title2 select {
+   width: 65%; 
+    height: 40px; /* Adjust the height to your preference */
+    padding: 10px; /* Add padding for spacing within the input field */
+    border: 2px solid #ddd; /* Add a border with a color of your choice */
+    border-radius: 6px; /* Add border-radius for rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+
+
+
+#shop .form-title3 {
+    display: flex;
+    flex-direction: column;
     
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 194.12px;
-    height: 123.94px;
-    top: 581.99px;
-    left: 126px;
-    border-radius: 6px;
-
 }
 
-#shop .form-filtro input,
-#shop .form-filtro label{
-   display: inline-block;
+#shop .form-title3 label {
+    color: #333; /* Adjust the color to your preference */
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 1.6em; /* Adjust the font size */
+    margin-bottom: var(--spacing-6); /* Adjust the margin for the label */
 }
 
-#shop .form-filtro .form-check .check{
+#shop .form-title3 .form-price {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+#shop .form-title3 .form-price input{
+    width: 17%; 
+}
+
+
+
+#shop .form-filtro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+#shop .form-filtro .form-check {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+#shop .form-filtro input[type="checkbox"] {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#shop .form-filtro label {
+    color: #333; /* Adjust the color to your preference */
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 1.6em; /* Adjust the font size */
+}
+
+#shop .form-filtro .check {
     width: 24px;
     height: 24px;
-    top: 681.93px;
-    left: 126px;
-    border-radius: 6px;
-    border: 2px;    
+    border: 2px solid #333; /* Add a border with a color of your choice */
+    border-radius: 6px; /* Add border-radius for rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px ;
 }
-#shop .form-check{
-    
+
+#shop .form-filtro .check:hover {
+    background-color: #eee; /* Change background color on hover */
+}
+
+#shop .form-filtro input[type="checkbox"]:checked + label {
+    font-weight: 600; /* Adjust the font weight for checked labels */
+}
+
+
+#shop .form-check {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: var(--spacing-8); /* Adjust the gap between input and label */
     display: inline-block;
-    width: 128.12px;
-    height: 24px;
-    top: 681.93px;
-    left: 126px;
-    border-radius: 6px;
-
 }
 
 
-#shop .form-filtro label{
-    
-    color: #111;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+#shop .form-check label {
+    color: #333; /* Adjust the color to your preference */
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 1.6em; /* Adjust the font size */
 }
+
+
 /*PAGINATION*/
 
 #shop .pagination {
@@ -1396,15 +1453,6 @@ header {
 
 /*ANIMATIONS*/
 
- #shop @keyframes fade {
-    0%{
-        opacity: 0;
-    }
-    
-    100%{
-        opacity: 1;
-    }
-} 
 
 /* INICIO DE CARRITO*/
 

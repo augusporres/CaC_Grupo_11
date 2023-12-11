@@ -15,16 +15,16 @@
       <aside>
         <form action="/resultados-de-busqueda" method="get">
             <div class="form-item">
-                <div class="form-title">
-                    <label for="product-search">BUSCAR</label>
-                    <input type="text" id="product-search" name="q" placeholder="item o categoría" required>
+                <div class="form-title1">
+                    <label for="product-search"><b>BUSCAR</b></label>
+                    <input type="text" id="product-search" name="q" placeholder="Item o categoría" required>
                 </div>
             </div>
         
             <div>
                 <div class="form-order">
-                  <div class="form-title">
-                    <label for="sort-by">ORDENAR POR</label>
+                  <div class="form-title2">
+                    <label for="sort-by"><b>ORDENAR POR</b></label>
                     <select id="sort-by" name="sort">
                         <option value="precio-desc">Mayor a Menor</option>
                         <option value="relevancia">Relevancia</option>
@@ -37,21 +37,21 @@
             </div>
         
             <div>
-                <div class="form-title">
-                    <label>PRECIO</label>
+                <div class="form-title3">
+                    <label><b>PRECIO</b></label>
                     <div class="form-price">
-                        <label class="price-min" for="price-min"> Min </label>
-                        <input type="number" id="price-min" name="min_price" min="0" step="0.01">
-                        <span>-</span>
-                        <label class="price-max" for="price-max">  Max</label>
-                        <input type="number" id="price-max" name="max_price" min="0" step="0.01">
+                        <label class="price-min" for="price-min"> <b>MIN</b> </label>
+                        <input type="number" id="price-min" name="min_price" min="0" placeholder="0" >
+                        <span> -</span>
+                        <label class="price-max" for="price-max"> <b>MAX</b></label>
+                        <input type="number" id="price-max" name="max_price" min="0" placeholder="0" >
                     </div>
                 </div>
             </div>
         
             <div>
-                <div class="form-title">
-                    <label >FILTRAR</label>
+                <div class="form-title4">
+                    <label ><b>FILTRAR</b></label>
                     <div class="form-filtro">
                        <div class="form-check"> 
                              <input class="check" type="checkbox" id="new" name="filter" value="nuevos">
