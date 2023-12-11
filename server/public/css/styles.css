@@ -1800,9 +1800,9 @@ header {
 
 /*-----------ADMIN----------*/
 #admin .search__container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1520px;
     margin-top: 40px;
+    margin-left: 10%;
     
 }
 
@@ -1811,7 +1811,10 @@ header {
     height: 44.28px;
     display: flex;
     align-items: center;
-    
+}
+#admin .search form{
+    display: flex;
+    gap: 14px;
 }
 
 #admin .search__button {
@@ -1941,7 +1944,8 @@ header {
 
 #admin .id {
     color: #1F1F1F;
-    text-align: right;
+    text-align: left;
+    padding-left: 1%;
     font-family: "Inter";
     font-size: 24px;
     font-style: normal;
