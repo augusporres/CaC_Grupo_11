@@ -14,7 +14,7 @@
     <div class="row">
       <aside>
         <form action="/resultados-de-busqueda" method="get">
-            <div>
+            <div class="form-item">
                 <div class="form-title">
                     <label for="product-search">BUSCAR</label>
                     <input type="text" id="product-search" name="q" placeholder="item o categoría" required>
@@ -22,7 +22,8 @@
             </div>
         
             <div>
-                <div class="form-title">
+                <div class="form-order">
+                  <div class="form-title">
                     <label for="sort-by">ORDENAR POR</label>
                     <select id="sort-by" name="sort">
                         <option value="precio-desc">Mayor a Menor</option>
@@ -31,16 +32,18 @@
                         <option value="nombre-asc">Nombre (A a Z)</option>
                         <option value="nombre-desc">Nombre (Z a A)</option>
                     </select>
+                  </div>  
                 </div>
             </div>
         
             <div>
                 <div class="form-title">
                     <label>PRECIO</label>
-                    <div class="form-subtitule">
-                        <label for="price-min">Min</label>
+                    <div class="form-price">
+                        <label class="price-min" for="price-min"> Min </label>
                         <input type="number" id="price-min" name="min_price" min="0" step="0.01">
-                        <label for="price-max"> - Max</label>
+                        <span>-</span>
+                        <label class="price-max" for="price-max">  Max</label>
                         <input type="number" id="price-max" name="max_price" min="0" step="0.01">
                     </div>
                 </div>
@@ -48,15 +51,25 @@
         
             <div>
                 <div class="form-title">
-                    <label>FILTRAR</label>
-                    <input type="checkbox" id="new" name="filter" value="nuevos">
-                    <label for="new">NUEVOS</label>
-                    <input type="checkbox" id="offers" name="filter" value="ofertas">
-                    <label for="offers">OFERTAS</label>
-                    <input type="checkbox" id="special-edition" name="filter" value="edicion-especial">
-                    <label for="special-edition">EDICIÓN ESPECIAL</label>
-                    <input type="checkbox" id="favorites" name="filter" value="favoritos">
-                    <label for="favorites">FAVORITOS</label>
+                    <label >FILTRAR</label>
+                    <div class="form-filtro">
+                       <div class="form-check"> 
+                             <input class="check" type="checkbox" id="new" name="filter" value="nuevos">
+                             <label for="new">NUEVOS</label>
+                       </div>
+                       <div class="form-check">  
+                            <input class="check" type="checkbox" id="offers" name="filter" value="ofertas">
+                            <label for="offers">OFERTAS</label>
+                       </div>
+                       <div class="form-check">
+                            <input class="check" type="checkbox" id="special-edition" name="filter" value="edicion-especial">
+                            <label for="special-edition">EDICIÓN ESPECIAL</label>
+                       </div>
+                       <div class="form-check">
+                            <input class="check" type="checkbox" id="favorites" name="filter" value="favoritos">
+                            <label for="favorites">FAVORITOS</label>
+                       </div>
+                    </div>   
                 </div>
             </div>
         </form>
@@ -90,19 +103,18 @@
                         </article>  
                     </li>
                 <% }); %>
-              
             </ul>
           </section>
     </div>    
     <!--inicio paginacion-->   
     <div class="pagination">
-        <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">...</a>
-            <a href="#">9</a>
-            <a href="#">10</a>
-            <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+        <a href="#" class="prev"><iconify-icon icon="fluent:chevron-left-24-filled"></iconify-icon></iconify-icon><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">...</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#" class="next"><iconify-icon icon="fluent:chevron-right-24-filled"></iconify-icon><i class="fas fa-chevron-right"></i></a>
     </div>
          
          
