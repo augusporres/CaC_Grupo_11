@@ -3,7 +3,7 @@ var modules = require('../models/model')
 
 const admin = (async (req, res) => {
     session = req.session
-    if(session.userId){
+    if(session.userId && session.isAuth){
         const datos =  await modules.getAllProductsFromDb()
         res.render('admin.ejs', {
             productos : datos

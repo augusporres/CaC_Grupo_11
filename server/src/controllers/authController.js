@@ -12,9 +12,14 @@ const postLogin = (async (req, res) => {
         session.userId = authUser.email
         var role = await modules.getRolesByUserId(authUser.user_id)
         if(role.role_id != 1)
+        {
+            session.isAuth = false
             res.redirect('/home')
-        else
+        }
+        else{
+            session.isAuth = true
             res.redirect('/admin')
+        }
     }
     else
         res.status(400).json({message: 'Usuario/Contraseña incorrecto'})
