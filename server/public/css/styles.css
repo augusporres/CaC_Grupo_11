@@ -163,7 +163,8 @@ header {
 .footer {
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-68);
-    
+    position: relative;
+    bottom: 0;
 }
 
 .footer__copy {
@@ -1088,7 +1089,7 @@ header {
 #shop section{
     display: flex;
     width: 960.03px;
-    height: 1608px;
+    
     top: 212px;
     left: 368px;
     background: white;
@@ -1332,7 +1333,7 @@ header {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 180px; /* Ajusta segÃºn el espaciado deseado desde la parte inferior */
+    bottom: 30px; /* Ajusta segÃºn el espaciado deseado desde la parte inferior */
   }
   
   #shop .pagination a {
