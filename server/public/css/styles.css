@@ -957,11 +957,20 @@ header {
 
 /***********************SHOP**************************/
 
+
+#shop *,
+#shop *::before,
+#shop *::after{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
 #shop html{
     font-family: var(--base-font);
     font-size: 62.5%;
     color:var(--dark-solid);
-    
+
 }
 #shop a{
     text-decoration : none;
@@ -969,11 +978,6 @@ header {
     color: inherit;
 }
 
-#shop header,
-footer {
-    font-family:var(--alternative-font) ;
-    color:var(--light-font-solid);
-}
 #shop ul,ol {
     list-style-type: none;
 }
@@ -1006,24 +1010,24 @@ footer {
 #shop .navbar__logo{
     max-width : 300px;
 }
-/* #shop .navbar__menu{
-    display: flex; 
-    align-items: center;
-    gap: var(--spacing-20);
-} */
+#shop .navbar__menu{
+   display: flex; 
+   align-items: center;
+   gap: var(--spacing-20);
+}
 
-/* #shop .navbar__link{
+#shop .navbar__link{
     font-size: var(--font-medium);
     padding: var(--spacing-8)var(--spacing-16);
     display:inline-block;
     transition: background .3s ease-in-out;
     position: relative;
-    
-} */
 
-/* #shop .navbar__link:hover {
+}
+
+#shop .navbar__link:hover {
     background-color: var(--primary-900);
-} */
+}
 
 #shop .width-icon{
     display: flex;
@@ -1031,34 +1035,343 @@ footer {
     gap: var(--spacing-8);
 }
 
-/* #shop .width-submenu:hover .submenu{
+#shop .width-submenu:hover .submenu{
     display: block;
-    */
-    /* }
-    #shop .submenu{
-        display: none;
-        width: 300px;
-        position: absolute;
-        background-color:var(--dark-bg-solid);
-        z-index: 99;
-        
-    } */
     
-    /* #shop .submenu__link{
-        display: block;
-        padding: var(--spacing-8)var(--spacing-16);
-        font-size: var(--font-medium) ;
-        transition: background .3s ease-in-out;
-    }
+}
+#shop .submenu{
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color:var(--dark-bg-solid);
+    z-index: 99;
+   
+}
+
+#shop .submenu__link{
+    display: block;
+    padding: var(--spacing-8)var(--spacing-16);
+    font-size: var(--font-medium) ;
+    transition: background .3s ease-in-out;
+}
+
+#shop .submenu__link:hover {
+    background-color: var(--primary-900);
+}
+
+/*Aside*/
+#shop .row{
+    display: flex;
+    gap: var(--spacing-24);
+}
+
+#shop aside{
+    display: flex;
+    width: 243.04px;
+    height: 493.93px;
+    top: 212px;
+    left: 110px;
+    border-radius: 6px;
+    background-color: white;
+    padding: var(--spacing-16);
     
-    #shop .submenu__link:hover {
-        background-color: var(--primary-900);
-    } */
+    flex-direction: column;
+    gap: var(--spacing-16);  
+    
+}
+/*SECTION*/
+
+#shop section{
+    display: flex;
+    width: 960.03px;
+    height: 1608px;
+    top: 212px;
+    left: 368px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+/*FORM*/
+#shop form {
+    margin-top: var(--spacing-36); /* Add margin at the top for spacing */
+    padding: var(--spacing-24); /* Add padding to the form for spacing and aesthetics */
+    background-color: #ffffff; /* Set a background color */
+    border: 2px solid #ddd; /* Add a border with a color of your choice */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+#shop form:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+}
+
+#shop form input[type="submit"] {
+    background-color: #4CAF50; /* Set a background color for the submit button */
+    color: #fff; /* Set text color for the submit button */
+    padding: 10px 20px; /* Add padding to the submit button */
+    border: none; /* Remove border from the submit button */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+#shop form input[type="submit"]:hover {
+    background-color: #45a049; /* Darken the background color on hover */
+}
+
+/*BUSCAR*/
+#shop .form-item input {
+    width: 100%; /* Make the input take the full width of the container */
+    height: 40px; /* Adjust the height to your preference */
+    padding: 10px; /* Add padding for spacing within the input field */
+    border: 2px solid #ddd; /* Add a border with a color of your choice */
+    border-radius: 6px; /* Add border-radius for rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+#shop .form-item input:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove the default focus outline */
+}
+#shop .form-item description{
+    color: #B9B9B9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+} 
+#shop .form-item select option{
+    width: 234.285px;
+    height: 27.519px;
+    flex-shrink: 0; 
+}
+
+/*ORDENAR POR */  
+#shop .form-order {
+    width: 243.04px;
+    height: 89.285px;
+    flex-shrink: 0;
+    
+}
+
+
+#shop .form-order select{
+    width: 243.034px;
+    height: 44.285px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 2px solid #30343F;
+}
+
+/*PRICE*/
+
+#shop .form-price{
+    display: inline-block;
+    width: 234.285px;
+    height: 72.519px;
+    flex-shrink: 0;
+}
+
+#shop .form-price .price-min, 
+#shop .form-price .price-max  {
+    display: inline-block;
+}
+#shop .form-price label{ 
+    color: #111;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+}
+
+#shop .form-price input{
+    width: 59.143px;
+    height: 27.519px;
+    flex-shrink: 0;
+}
+
+
+/*FILTRO*/
+
+#shop .form-title1,
+#shop .form-title2,
+#shop .form-title3,
+#shop .form-title4 {
+    margin-bottom: var(--spacing-24); /* Increased margin to create more space between form-title sections */
+}
+
+#shop .form-title1 label,
+#shop .form-title2 label,
+#shop .form-title3 label,
+#shop .form-title4 label {
+    color: #333; /* Adjust the color to your preference */
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 1.6em; /* Adjust the font size */
+    margin-bottom: var(--spacing-8); /* Adjust the margin for the label */
+}
+
+
+#shop .form-title2 select {
+   width: 65%; 
+    height: 40px; /* Adjust the height to your preference */
+    padding: 10px; /* Add padding for spacing within the input field */
+    border: 2px solid #ddd; /* Add a border with a color of your choice */
+    border-radius: 6px; /* Add border-radius for rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+
+
+
+#shop .form-title3 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#shop .form-title3 label {
+    color: #333; /* Adjust the color to your preference */
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 1.6em; /* Adjust the font size */
+    margin-bottom: var(--spacing-6); /* Adjust the margin for the label */
+}
+
+#shop .form-title3 .form-price {
+    display: flex;
+    align-items: center;
     
     
+}
+
+#shop .form-title3 .form-price input{
+    width: 17%; 
+}
+
+
+
+#shop .form-filtro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+#shop .form-filtro .form-check {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+#shop .form-filtro input[type="checkbox"] {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#shop .form-filtro label {
+    color: #333; /* Adjust the color to your preference */
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 1.6em; /* Adjust the font size */
+}
+
+#shop .form-filtro .check {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #333; /* Add a border with a color of your choice */
+    border-radius: 6px; /* Add border-radius for rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px ;
+}
+
+#shop .form-filtro .check:hover {
+    background-color: #eee; /* Change background color on hover */
+}
+
+#shop .form-filtro input[type="checkbox"]:checked + label {
+    font-weight: 600; /* Adjust the font weight for checked labels */
+}
+
+
+#shop .form-check {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: var(--spacing-8); /* Adjust the gap between input and label */
+    display: inline-block;
+}
+
+
+#shop .form-check label {
+    color: #333; /* Adjust the color to your preference */
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 1.6em; /* Adjust the font size */
+}
+
+
+/*PAGINATION*/
+
+#shop .pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     
-    /*SLIDER*/
+    justify-content: center;
     
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 0%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 180px; /* Ajusta segÃºn el espaciado deseado desde la parte inferior */
+  }
+  
+  #shop .pagination a {
+    display: flex; 
+    color:black;
+    cursor: pointer;    
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 4px;
+    border: 1px solid #DFE3E8;
+    margin: 0 5px;
+  }
+  
+  
+  #shop .pagination a.active {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    color: red;
+    border: 1px solid #FF3333;
+  }
+
+  #shop .pagination a:hover:not(.active) {       
+    border: solid 1px black;
+  }
+   
+    
+  #shop .pagination a.prev,
+  #shop .pagination a.next {
+    display: flex;
+    align-items: center;
+  }
+  
+  #shop .pagination a.prev {
+    margin-right: 15px;
+  }
+  
+  #shop .pagination a.next {
+    margin-left: 10px;
+  }
+  
+
+/*SLIDER*/
+
 #shop .slider{
     display: flex;
     flex-direction: column;
@@ -1070,15 +1383,18 @@ footer {
     display: flex;
     gap:var(--spacing-24);
     flex-wrap: wrap;
+    margin-top: 0px;
 }
+
 #shop .slider__item{
     width: 30%;
 }
-
-/*.slider__item{
-    
-    
+/*
+#shop .slider .container{
+    display: flex;
 }*/
+
+
 #shop .card-item__cover{
     display: flex;
     position: relative;
@@ -1131,8 +1447,8 @@ footer {
 
 #shop .card-item__promo{
     font-size: var(--font-xsmall);
-    /* color: var(--secondary-solid);*/
-    color: var(--second-solid);
+   /* color: var(--secondary-solid);*/
+   color: var(--second-solid);
     font-weight: 700;
 }
 
@@ -1143,14 +1459,13 @@ footer {
 #shop .footer{
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-68);
-    
+
 }
 
 #shop .footer__copy{
     margin-top: var(--spacing-36); 
     text-align: center;
 }
-
 
 /*ANIMATIONS*/
 
