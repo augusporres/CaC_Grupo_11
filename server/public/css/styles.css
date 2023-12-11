@@ -397,6 +397,10 @@ header {
     border-style: none;
 }
 
+#login .ingresar input {
+    display: inline-block;
+}
+
 #login .forgot-pass {
     text-decoration: none;
 }
